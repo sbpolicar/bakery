@@ -9,7 +9,7 @@ BakeryApp.config(['$routeProvider','$locationProvider',function($routeProvider,$
   // $locationProvider.html5Mode(true);
 
   $routeProvider
-  .when('/bakery/' || '/bakery/#/',{
+  .when('/bakery/',{
     templateUrl: '/bakery/views/home.html',
     controller: 'HomeCtrl'
   })
