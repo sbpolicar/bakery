@@ -9,27 +9,27 @@ BakeryApp.config(['$routeProvider','$locationProvider',function($routeProvider,$
   $locationProvider.html5Mode(true);
 
   $routeProvider
-  .when('/bakery/',{
+  .when('/',{
     templateUrl: '/bakery/views/home.html',
     controller: 'HomeCtrl'
   })
-  .when('/bakery/special',{
+  .when('/special',{
     templateUrl: '/bakery/views/special.html',
     controller: 'HomeCtrl'
   })
-  .when('/bakery/about',{
+  .when('/about',{
     templateUrl: '/bakery/views/about.html',
     controller: 'HomeCtrl'
   })
-  .when('/bakery/current',{
+  .when('/current',{
     templateUrl: '/bakery/views/current.html',
     controller: 'HomeCtrl'
   })
-  .when('/bakery/history',{
+  .when('/history',{
     templateUrl: '/bakery/views/history.html',
     controller: 'HomeCtrl'
   })
-  .when('/bakery/login',{
+  .when('/login',{
     templateUrl: '/bakery/views/admin.html',
     controller: 'HomeCtrl'
   })
