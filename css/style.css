@@ -93,7 +93,6 @@ hr {
 }
 .vr {
   display: none;
-  font-size: 100px;
 }
 @media (max-width: 700px) {
   *, .header, .special-header, .navigator{
@@ -101,6 +100,7 @@ hr {
   }
   .vr {
   display: inline;
+  font-size: 100px;
   }
   .bakery-image {
     width: 70%;
