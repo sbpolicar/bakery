@@ -9,32 +9,32 @@ BakeryApp.config(['$routeProvider','$locationProvider',function($routeProvider,$
   // $locationProvider.html5Mode(true);
 
   $routeProvider
-  .when('bakery/#/',{
-    templateUrl: 'bakery/views/home.html',
+  .when('/bakery/#/',{
+    templateUrl: '/bakery/views/home.html',
     // controller: 'HomeCtrl'
   })
-  .when('bakery/#/special',{
-    templateUrl: 'bakery/views/special.html',
+  .when('/bakery/#/special',{
+    templateUrl: '/bakery/views/special.html',
     // controller: 'HomeCtrl'
   })
-  .when('bakery/#/about',{
-    templateUrl: 'bakery/views/about.html',
+  .when('/bakery/#/about',{
+    templateUrl: '/bakery/views/about.html',
     // controller: 'HomeCtrl'
   })
-  .when('bakery/#/current',{
-    templateUrl: 'bakery/views/current.html',
+  .when('/bakery/#/current',{
+    templateUrl: '/bakery/views/current.html',
     // controller: 'HomeCtrl'
   })
-  .when('bakery/#/history',{
-    templateUrl: 'bakery/views/history.html',
+  .when('/bakery/#/history',{
+    templateUrl: '/bakery/views/history.html',
     // controller: 'HomeCtrl'
   })
-  .when('bakery/#/login',{
-    templateUrl: 'bakery/views/admin.html',
+  .when('/bakery/#/login',{
+    templateUrl: '/bakery/views/admin.html',
     // controller: 'HomeCtrl'
   })
   .otherwise({
-    templateUrl:'bakery/views/404.html'
+    templateUrl:'/bakery/views/404.html'
   })
 
 }])
