@@ -85,19 +85,10 @@ hr {
 }
 
 .navlink {
-  width: 33%;
-  /*height: 33%;*/
+  width: auto;
+  height: 33%;
   /*margin: 0 auto;*/
   font-size: 2em;
-}
-.home {
-  text-align: right;
-}
-.about-us {
-  text-align: left;
-}
-.special-orders {
-  text-align: center;
 }
 @media (max-width: 700px) {
   *, .header, .special-header, .navigator{
