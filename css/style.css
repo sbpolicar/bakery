@@ -91,9 +91,15 @@ hr {
   margin: 0 auto;
   font-size: 2em;
 }
+.vr {
+  display: none;
+}
 @media (max-width: 700px) {
   *, .header, .special-header, .navigator{
    font-family: 'Abel', sans-serif !important;
+  }
+  .vr {
+  display: inline;
   }
   .bakery-image {
     width: 70%;
