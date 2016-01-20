@@ -21,6 +21,7 @@ body {
 }
 body > div:nth-child(6) {
   text-align: center;
+  margin: 0 auto;
 }
 .viewport {
   margin: 0 auto;
