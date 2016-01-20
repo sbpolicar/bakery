@@ -1,0 +1,119 @@
+html {
+  /*width: 100%;*/
+  /*height: 100%;*/
+}
+ul {
+  text-align: left;
+}
+body {
+  overflow-x:hidden;
+  background-color: rgba(255,161,0,0.5);
+  height: 100%;
+  width: 100%;
+  font-family: 'Abel', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+/*  background-image: url("http://i201.photobucket.com/albums/aa113/Lee1959/Patterns%20Textures/WhitePaper.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;*/
+}
+body > div:nth-child(6) {
+  text-align: center;
+}
+.viewport {
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+}
+.header-container{
+  border-radius: 5px;
+  padding: 5px;
+  /*margin: 0 auto;*/
+  /*width: 50%;*/
+  background-color: rgba(255,255,255,0.5);
+  text-align: center;
+}
+.header {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: 300%;
+}
+.subheader{
+  font-size: 150%;
+  /*text-align: center;*/
+  text-decoration: none;
+  color: black;
+}
+.subheader:hover{
+  transition: all 1.5s;
+  text-shadow: 0 0 100px;
+}
+.special-header{
+  font-family: 'Pacifico', cursive;
+
+}
+.bakery-image-container {
+  text-align: center;
+}
+
+.bakery-image {
+  border: solid rgba(0,0,0,0.5) 1px;
+  border-radius: 2em;
+  width: 40%;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+.nav-container {
+  width: 100%;
+  text-align: center;
+}
+.navigator {
+  font-family: 'Pacifico', cursive;
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+
+.navlink {
+  width: 33%;
+  /*height: 33%;*/
+  /*margin: 0 auto;*/
+  font-size: 2em;
+}
+.home {
+  text-align: right;
+}
+.about-us {
+  text-align: left;
+}
+.special-orders {
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .bakery-image {
+    width: 70%;
+  }
+  .nav-bar {
+    /*width: 100%;*/
+  }
+}
+@media (max-width: 999px) {
+  .about-us {
+  text-align: center;
+  }
+  .special-orders {
+    text-align: center;
+  }
+  .home {
+    text-align: center;
+  }
+}
+
