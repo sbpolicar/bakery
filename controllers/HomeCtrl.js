@@ -3,7 +3,7 @@ BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($s
 
   // console.log($location.path())
 
-  images = ['/images/door.jpg', '/images/exteriorcenter.jpg', '/images/exteriorleft.jpg', '/images/menuwall.jpg', '/images/menuwall2.jpg', '/images/mt_si.jpg', '/images/wide.jpg'];
+  images = ['/bakery/images/door.jpg', '/bakery/images/exteriorcenter.jpg', '/bakery/images/exteriorleft.jpg', '/bakery/images/menuwall.jpg', '/bakery/images/menuwall2.jpg', '/bakery/images/mt_si.jpg', '/bakery/images/wide.jpg'];
 
   var indexer = 0;
 
