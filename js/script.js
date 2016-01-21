@@ -1,7 +1,7 @@
 var BakeryApp = angular.module('BakeryApp',['ngMaterial','ngAnimate','ngRoute']);
 
 BakeryApp.run([function(){
-  // console.log('Bakery angular init');
+
 }]);
 
 BakeryApp.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider) {
