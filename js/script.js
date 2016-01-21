@@ -10,7 +10,7 @@ BakeryApp.config(['$routeProvider','$locationProvider',function($routeProvider,$
   $locationProvider.html5Mode(false);
 
   $routeProvider
-  .when('/bakery/#/',{
+  .when('/bakery/',{
     templateUrl: '/bakery/views/home.html'
 
   })
