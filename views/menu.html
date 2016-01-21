@@ -1,0 +1,58 @@
+<div class="row">
+<div class="menu row">
+  <div>
+    <h1 class="title">{{whichMenu}}</h1>
+    <!-- <button ng-click="whichMenu='Menu'" class="menu-toggle">Back</button> -->
+  </div>
+
+    <!-- Menu Select -->
+    <div class="col-sm-3">
+      <h1 ng-click="whichMenu='Sweets'" class="menu-subtitle">Sweets</h1>
+    </div>
+    <div  class="col-sm-3">
+      <h1 ng-click="whichMenu='Savories'" class="menu-subtitle">Savories</h1>
+    </div>
+    <div  class="col-sm-3">
+      <h1 ng-click="whichMenu='Breads'" class="menu-subtitle">Breads</h1>
+    </div>
+    <div class="col-sm-3">
+      <h1 ng-click="whichMenu='Drinks'" class="menu-subtitle">Drinks</h1>
+    </div>
+    <!-- Menu Selected - which menu -->
+    <div class="sweets col-sm-6" ng-if="whichMenu==='Sweets'">
+      <hr>
+        <ul>
+          <h1>Doughnuts</h1>
+          <li>Maple Bar</li>
+          <li>Apple Fritter</li>
+        </ul>
+      <hr>
+    </div>
+
+    <div class="savories col-sm-6" ng-if="whichMenu==='Savories'">
+      <hr>
+      savory
+      <hr>
+    </div>
+
+    <div class="breads col-sm-6" ng-if="whichMenu==='Breads'">
+      <hr>
+      bread
+      <hr>
+    </div>
+
+    <div class="drinks col-sm-6" ng-if="whichMenu==='Drinks'">
+      <hr>
+      drink
+      <hr>
+    </div>
+
+    <div class="images col-sm-6" ng-if="whichMenu!=='Menu'">
+      <hr>
+      images
+      <hr>
+    </div>
+
+    <hr>
+</div>
+</div>

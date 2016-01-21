@@ -7,15 +7,15 @@ BakeryApp.run([function(){
 
 BakeryApp.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider) {
 
-  $locationProvider.html5Mode(true);
+  $locationProvider.html5Mode(false);
 
   $routeProvider
   .when('/',{
     templateUrl: '/views/home.html',
     controller: 'HomeCtrl'
   })
-  .when('/special',{
-    templateUrl: '/views/special.html',
+  .when('/menu',{
+    templateUrl: '/views/menu.html',
     controller: 'HomeCtrl'
   })
   .when('/about',{
