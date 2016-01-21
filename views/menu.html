@@ -1,58 +1,88 @@
+
 <div class="row">
 <div class="menu row">
   <div>
     <h1 class="title">{{whichMenu}}</h1>
+    <h3>Explore our <span ng-if="whichMenu==='Menu'">full</span> {{ whichMenu.toLowerCase(); }}!</h3>
     <!-- <button ng-click="whichMenu='Menu'" class="menu-toggle">Back</button> -->
   </div>
 
     <!-- Menu Select -->
     <div class="col-sm-3">
-      <h1 ng-click="whichMenu='Sweets'" class="menu-subtitle">Sweets</h1>
+      <h1 ng-click="whichMenu='Sweets'" class="menu-subtitle">Sweets</h1><hr ng-if="whichMenu==='Sweets'">
     </div>
     <div  class="col-sm-3">
-      <h1 ng-click="whichMenu='Savories'" class="menu-subtitle">Savories</h1>
+      <h1 ng-click="whichMenu='Savories'" class="menu-subtitle">Savories</h1><hr ng-if="whichMenu==='Savories'">
     </div>
     <div  class="col-sm-3">
-      <h1 ng-click="whichMenu='Breads'" class="menu-subtitle">Breads</h1>
+      <h1 ng-click="whichMenu='Breads'" class="menu-subtitle">Breads</h1><hr ng-if="whichMenu==='Breads'">
     </div>
     <div class="col-sm-3">
-      <h1 ng-click="whichMenu='Drinks'" class="menu-subtitle">Drinks</h1>
+      <h1 ng-click="whichMenu='Drinks'" class="menu-subtitle">Drinks</h1><hr ng-if="whichMenu==='Drinks'">
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- Menu Selected - which menu -->
-    <div class="sweets col-sm-6" ng-if="whichMenu==='Sweets'">
-      <hr>
+    <div class="sweets col-sm-4" ng-if="whichMenu==='Sweets'">
+
         <ul>
           <h1>Doughnuts</h1>
-          <li>Maple Bar</li>
-          <li>Apple Fritter</li>
+            <li>Maple Bar</li>
+            <li>Apple Fritter</li>
+          <h1>Pasteries</h1>
+          <h1>Pies</h1>
+          <h1>Cookies</h1>
         </ul>
-      <hr>
+
     </div>
 
-    <div class="savories col-sm-6" ng-if="whichMenu==='Savories'">
-      <hr>
-      savory
-      <hr>
+    <div class="savories col-sm-4" ng-if="whichMenu==='Savories'">
+
+        <ul>
+          <h1>Quiche</h1>
+          <h1>Soup</h1>
+          <h1>Sandwiches</h1>
+          <h1>Meatball Calzones</h1>
+          <h1>Breakfast Casserole</h1>
+        </ul>
+
     </div>
 
-    <div class="breads col-sm-6" ng-if="whichMenu==='Breads'">
-      <hr>
-      bread
-      <hr>
+    <div class="breads col-sm-4" ng-if="whichMenu==='Breads'">
+
+        <ul>
+          <h1>Apple Cinnamon Bread</h1>
+          <h1>Banana Bread</h1>
+          <h1>Zucchini Bread</h1>
+          <h1>Pumpkin Bread</h1>
+          <h1>Rolls</h1>
+        </ul>
+
     </div>
 
-    <div class="drinks col-sm-6" ng-if="whichMenu==='Drinks'">
-      <hr>
-      drink
-      <hr>
+    <div class="drinks col-sm-4" ng-if="whichMenu==='Drinks'">
+
+        <ul>
+          <h1>Espresso</h1>
+          <h1>Hot Chocolate</h1>
+          <h1>Tea</h1>
+          <h1>Orange Juice / Apple Juice / Milk / Chocolate milk</h1>
+          <h1>San Pellegrino</h1>
+          <h1>Izzy</h1>
+          <h1>Coke and Pepsi products</h1>
+        </ul>
     </div>
 
-    <div class="images col-sm-6" ng-if="whichMenu!=='Menu'">
-      <hr>
-      images
-      <hr>
+    <div class="images col-sm-8" ng-if="whichMenu!=='Menu'">
+      <div class="center">
+        <div ng-click="loadImages()"><img src="{{currentImage}}"></div>
+      </div>
+
+
     </div>
 
-    <hr>
 </div>
 </div>

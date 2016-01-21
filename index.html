@@ -4,45 +4,14 @@
   <title>Georgias Bakery</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <base href="/bakery">
+  <base href="/">
   <link href='https://fonts.googleapis.com/css?family=Fresca' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.css">
-  <link href='bakery/css/style.css' rel='stylesheet' type='text/css'>
-
-</head>
-<body class="veiwport" ng-controller="HomeCtrl">
-<br>
-  <div class="well">
-    <h1 class="title">Georgia's</h1>
-    <h1 class="subtitle">Bakery / Cafe / Deli</h1>
-
-  </div>
-  <div class="nav-container">
-  <hr>
-    <span class="navigator">
-      <a href="bakery/#/" class="navlink ">Home</a>
-      <span class="vr">|</span>
-      <a href="bakery/#/menu" class="navlink" ng-click="whichMenu='Menu'">Menu</a>
-      <span class="vr">|</span>
-      <a href="bakery/#/about" class="navlink ">About Us</a>
-      <!-- <span class="vr">|</span> -->
-      <!-- <a href="/bakery/current" class="navlink ">Current Orders</a>
-      <span class="vr">|</span> -->
-      <!-- <a href="/bakery/history" class="navlink ">Order History</a> -->
-
-    </span>
-  <hr>
-  </div>
-  <div class="header-container">
-    <ng-view></ng-view>
-  </div>
-  <br>
-  <div class="fine-print">&copy; Samuel Policar 2016 <a href="/bakery/login">Admin Login</a></div>
-  <br>
+  <link href='/css/style.css' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
@@ -52,7 +21,39 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.js"></script>
-  <script type="text/javascript" src="bakery/js/script.js"></script>
-  <script type="text/javascript" src="bakery/controllers/HomeCtrl.js"></script>
+  <script type="text/javascript" src="/js/script.js"></script>
+  <script type="text/javascript" src="/controllers/HomeCtrl.js"></script>
+
+</head>
+<body class="veiwport" ng-controller="HomeCtrl">
+<br>
+  <div class="well main-header">
+    <h1 class="title">Georgia's</h1>
+    <h1 class="subtitle">Bakery / Cafe / Deli</h1>
+
+  </div>
+  <div class="nav-container">
+  <hr>
+    <span class="navigator">
+      <a href="/#/" class="navlink ">Home</a>
+      <span class="vr">|</span>
+      <a href="/#/menu" class="navlink">Menu</a>
+      <span class="vr">|</span>
+      <a href="/#/about" class="navlink ">About Us</a>
+      <!-- <span class="vr">|</span> -->
+      <!-- <a href="/bakery/current" class="navlink ">Current Orders</a>
+      <span class="vr">|</span> -->
+      <!-- <a href="/bakery/history" class="navlink ">Order History</a> -->
+
+    </span>
+  <hr>
+  </div>
+  <div class="">
+    <ng-view></ng-view>
+  </div>
+  <br>
+  <br>
+  <div class="fine-print">&copy; Samuel Policar 2016 <a href="/bakery/login">Admin Login</a></div>
+  <script type="text/javascript" src="/js/jquery.js"></script>
 </body>
 </html>

@@ -1,3 +1,43 @@
-BakeryApp.controller('HomeCtrl', ['$scope', '$location', function($scope, $location){
+BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($scope, $location, $timeout){
   $scope.whichMenu = 'Menu';
+
+  // console.log($location.path())
+
+  images = ['/images/door.jpg', '/images/exteriorcenter.jpg', '/images/exteriorleft.jpg', '/images/menuwall.jpg', '/images/menuwall2.jpg', '/images/mt_si.jpg', '/images/wide.jpg'];
+
+  var indexer = 0;
+
+  $scope.currentImage = images[indexer];
+
+  var loadImages = function(){
+    console.log('fired off function')
+    if(indexer === images.length-1){
+    console.log('end of array')
+      $timeout(function(){
+        console.log('waited 3 seconds after end off array')
+        indexer = 0;
+        $scope.currentImage = images[indexer];
+        loadImages();
+      }, 3000);
+    } else if ($location.path() !== '/menu'){
+      return
+    }
+    else {
+      console.log('round '+indexer)
+      indexer++;
+      $scope.currentImage = images[indexer];
+      $timeout(function(){
+      console.log('waited 3 seconds round '+indexer)
+        loadImages()
+      }, 3000);
+    }
+  };
+  $scope.$watch(function() {
+    return $location.path();
+ }, function(){
+    if($location.path() === '/menu') {
+      loadImages();
+    }
+ });
 }])
+

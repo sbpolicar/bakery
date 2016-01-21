@@ -11,28 +11,28 @@ BakeryApp.config(['$routeProvider','$locationProvider',function($routeProvider,$
 
   $routeProvider
   .when('/',{
-    templateUrl: '/views/home.html',
-    controller: 'HomeCtrl'
+    templateUrl: '/views/home.html'
+
   })
   .when('/menu',{
-    templateUrl: '/views/menu.html',
-    controller: 'HomeCtrl'
+    templateUrl: '/views/menu.html'
+
   })
   .when('/about',{
-    templateUrl: '/views/about.html',
-    controller: 'HomeCtrl'
+    templateUrl: '/views/about.html'
+
   })
   .when('/current',{
-    templateUrl: '/views/current.html',
-    controller: 'HomeCtrl'
+    templateUrl: '/views/current.html'
+
   })
   .when('/history',{
-    templateUrl: '/views/history.html',
-    controller: 'HomeCtrl'
+    templateUrl: '/views/history.html'
+
   })
   .when('/login',{
-    templateUrl: '/views/admin.html',
-    controller: 'HomeCtrl'
+    templateUrl: '/views/admin.html'
+
   })
   .otherwise({
     templateUrl:'/views/404.html'
