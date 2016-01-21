@@ -1,16 +1,5 @@
-<div class="container">
-
-<h1 class="special-header"><span ng-if="name">{{name}}'s</span> Special Order</h1><hr>
-  <p>This form will be a lot more complicated for detailed orders</p>
-
-  <form class="form-group">
-  <label class="navlink">Your Name:</label>
-    <input ng-model="name" type="text" class="form-control" placeholder="Your name" required>
-  <label class="navlink">Your Email:</label>
-    <input ng-model="email" type="email" class="form-control" placeholder="You@email.com" required>
-  <label class="navlink">Your Order:</label>
-    <input type="checkbox">
-    <textarea ng-model="body" required type="text" class="form-control" placeholder="Tell us all about your special order..."></textarea>
-  </form>
-  <a href="mailto:sbpolicar@gmail.com?subject={{name+' / '+email}}'s%20Special%20Order&amp;body={{body}}"><button ng-if="email === true" class="btn">Order</button></a>
+<div class="well">
+<div class="col-md-4">Sweets</div>
+<div class="col-md-4">Savories</div>
+<div class="col-md-4">X</div>
 </div>

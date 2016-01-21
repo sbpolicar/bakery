@@ -1,3 +1,4 @@
+
 var BakeryApp = angular.module('BakeryApp',['ngMaterial','ngAnimate','ngRoute']);
 
 BakeryApp.run([function(){
@@ -9,33 +10,36 @@ BakeryApp.config(['$routeProvider','$locationProvider',function($routeProvider,$
   $locationProvider.html5Mode(true);
 
   $routeProvider
-  .when('/bakery/',{
-    templateUrl: '/bakery/views/home.html',
+  .when('/',{
+    templateUrl: '/views/home.html',
     controller: 'HomeCtrl'
   })
-  .when('/bakery/special',{
-    templateUrl: '/bakery/views/special.html',
+  .when('/special',{
+    templateUrl: '/views/special.html',
     controller: 'HomeCtrl'
   })
-  .when('/bakery/about',{
-    templateUrl: '/bakery/views/about.html',
+  .when('/about',{
+    templateUrl: '/views/about.html',
     controller: 'HomeCtrl'
   })
-  .when('/bakery/current',{
-    templateUrl: '/bakery/views/current.html',
+  .when('/current',{
+    templateUrl: '/views/current.html',
     controller: 'HomeCtrl'
   })
-  .when('/bakery/history',{
-    templateUrl: '/bakery/views/history.html',
+  .when('/history',{
+    templateUrl: '/views/history.html',
     controller: 'HomeCtrl'
   })
-  .when('/bakery/login',{
-    templateUrl: '/bakery/views/admin.html',
+  .when('/login',{
+    templateUrl: '/views/admin.html',
     controller: 'HomeCtrl'
   })
   .otherwise({
-    templateUrl:'/bakery/views/404.html'
+    templateUrl:'/views/404.html'
   })
 
 }])
+
+
+
 
