@@ -12,31 +12,19 @@ BakeryApp.config(['$routeProvider','$locationProvider',function($routeProvider,$
   $routeProvider
   .when('/',{
     templateUrl: '/bakery/views/home.html'
-
   })
   .when('/menu',{
     templateUrl: '/bakery/views/menu.html'
-
   })
-  .when('/about',{
-    templateUrl: '/bakery/views/about.html'
-
+  .when('/contact',{
+    templateUrl: '/bakery/views/contact.html'
   })
-  .when('/current',{
-    templateUrl: '/bakery/views/current.html'
-
-  })
-  .when('/history',{
-    templateUrl: '/bakery/views/history.html'
-
-  })
-  .when('/login',{
-    templateUrl: '/bakery/views/admin.html'
-
+  .when('/events',{
+    templateUrl: '/bakery/views/events.html'
   })
   .otherwise({
     templateUrl:'/bakery/views/404.html'
-  })
+  });
 
 }])
 
