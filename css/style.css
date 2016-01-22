@@ -34,9 +34,9 @@ body > div:nth-child(4) {
   margin: 0 auto;
 }
 .main-header {
-  background-image: url('http://res.cloudinary.com/sbpolicar/image/upload/v1453444944/exteriorcenter_vy413j.jpg');
-  background-position: top;
-  background-size: 100% 200%;
+  background-image: url('http://res.cloudinary.com/sbpolicar/image/upload/v1453444951/wide_pmw7qy.jpg');
+  background-position: bottom;
+  background-size: 100% 150%;
 }
 .sweets.ng-scope > span {
   width: 100%;
