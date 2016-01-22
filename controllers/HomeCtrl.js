@@ -1,43 +1,35 @@
 BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($scope, $location, $timeout){
-  $scope.whichMenu = 'Menu';
+    var images = ['https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150', "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" ];
+    var indexer = 0;
 
-  // console.log($location.path())
 
-  var images = ['https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150', "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" ];
+    $scope.loadImages = function(images){
+        if(indexer === images.length-1){
+            $timeout(function(){
+                indexer = 0;
+                $scope.currentImage = images[indexer];
+                loadImages();
+            }, 3000);
+        } else if ($location.path() !== '/menu'){
+            return
+        } else {
+            indexer++;
+            $scope.currentImage = images[indexer];
+            $timeout(function(){
+            loadImages()
+            }, 3000);
+        }
+    };
 
-  var indexer = 0;
+    $scope.whichMenu = 'Menu';
+    $scope.currentImage = images[indexer];
 
-  $scope.currentImage = images[indexer];
-
-  var loadImages = function(images){
-    console.log('fired off function')
-    if(indexer === images.length-1){
-    console.log('end of array')
-      $timeout(function(){
-        console.log('waited 3 seconds after end off array')
-        indexer = 0;
-        $scope.currentImage = images[indexer];
+    $scope.$watch(function() {
+        return $location.path();
+    }, function(){
+        if($location.path() === '/menu') {
         loadImages();
-      }, 3000);
-    } else if ($location.path() !== '/menu'){
-      return
-    }
-    else {
-      console.log('round '+indexer)
-      indexer++;
-      $scope.currentImage = images[indexer];
-      $timeout(function(){
-      console.log('waited 3 seconds round '+indexer)
-        loadImages()
-      }, 3000);
-    }
-  };
-  $scope.$watch(function() {
-    return $location.path();
-  }, function(){
-    if($location.path() === '/menu') {
-      loadImages();
-    }
- });
+        }
+    });
 }])
 
