@@ -23,7 +23,7 @@ body {
   border: 0;
   background-border: solid black 10px;
   background-image: url('http://res.cloudinary.com/sbpolicar/image/upload/v1453444945/mt_si_pfmaqz.jpg');
-  background-size: 150% 100%;
+  background-size: 100% 150%;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
