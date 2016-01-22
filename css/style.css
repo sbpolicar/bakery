@@ -45,7 +45,7 @@ body > div:nth-child(4) {
 .well{
   background-image: url('http://res.cloudinary.com/sbpolicar/image/upload/v1453444945/mt_si_pfmaqz.jpg');
   background-position: top;
-  background-size: 100% 100%;
+  background-size: 200% 200%;
   border-color: black;
   margin: 0 auto;
   width: 50%;
