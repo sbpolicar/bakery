@@ -151,22 +151,22 @@ img {
 .navlink {
   width: auto;
   /*height: 33%;*/
-  color: black;
+  color: rgba(255,175,0,1);
   margin: 0 auto;
   font-size: 2.5em;
+  text-shadow:
+   -1px -1px 0 black,
+    3px -1px 0 black,
+    -1px 1px 0 black,
+     3px 1px 0 black;
+}
+.navlink:hover {
+  color: black;
   text-shadow:
    -1px -1px 0 rgba(255,175,0,1),
     3px -1px 0 rgba(255,175,0,1),
     -1px 1px 0 rgba(255,175,0,1),
      3px 1px 0 rgba(255,175,0,1);
-}
-.navlink:hover {
-  color: rgba(0,90,175,1);
-  text-shadow:
-   -1px -1px 0 white,
-    3px -1px 0 white,
-    -1px 1px 0 white,
-     3px 1px 0 white;
 
 }
 .vr {
