@@ -1,41 +1,42 @@
 BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($scope, $location, $timeout){
-
   $scope.whichMenu = 'Menu';
 
   // console.log($location.path())
 
-  var doughnuts = ['https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150', "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" ];
-  var pasteries = ['https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=250', "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=250", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=250", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=250" ];
-  var images = ['https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=350', "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=350", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=350", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=350" ];
+  var images = ['https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150', "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" ];
 
   var indexer = 0;
 
-  $scope.currentImage = doughnuts[0];
+  $scope.currentImage = images[indexer];
 
-  var loadImages = function(imagesArray){
-    if ($location.path() !== '/menu'){
-      return
-    } else if(indexer === imagesArray.length-1){
+  var loadImages = function(images){
+    console.log('fired off function')
+    if(indexer === images.length-1){
+    console.log('end of array')
       $timeout(function(){
+        console.log('waited 3 seconds after end off array')
         indexer = 0;
-        $scope.currentImage = imagesArray[indexer];
+        $scope.currentImage = images[indexer];
         loadImages();
       }, 3000);
-    } else {
+    } else if ($location.path() !== '/menu'){
+      return
+    }
+    else {
+      console.log('round '+indexer)
       indexer++;
-      $scope.currentImage = imagesArray[indexer];
+      $scope.currentImage = images[indexer];
       $timeout(function(){
+      console.log('waited 3 seconds round '+indexer)
         loadImages()
       }, 3000);
     }
   };
-
-  // Watch URL, if /menu - begin slideshow. Defaults to doughnuts
   $scope.$watch(function() {
     return $location.path();
   }, function(){
     if($location.path() === '/menu') {
-      loadImages(doughnuts);
+      loadImages();
     }
  });
 }])
