@@ -28,7 +28,7 @@ BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($s
         return $location.path();
     }, function(){
         if($location.path() === '/menu') {
-        $scope.loadImages();
+        $scope.loadImages(images);
         }
     });
 }])
