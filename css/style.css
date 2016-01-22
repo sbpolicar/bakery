@@ -130,6 +130,7 @@ img {
   font-family: 'Pacifico', cursive;
 }
 .nav-container {
+  border: solid black 1px;
   margin: 0 auto;
   width: 60%;
   border-radius: 4px;
@@ -144,7 +145,6 @@ img {
   /*float: right;*/
   text-align: center;
   display: flex;
-  border: solid black 1px;
 }
 
 .navlink {
