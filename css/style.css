@@ -156,7 +156,8 @@ img {
      1px 1px 0 black;
 }
 .navlink:hover {
-  color: white;
+  color: rgba(0,90,175,1);
+
 }
 .vr {
   text-shadow:
@@ -165,7 +166,7 @@ img {
     -1px 1px 0 black,
      1px 1px 0 black;
   /*display: none;*/
-  color: rgba(0,90,175,1);
+  color: white;
   font-size: 40px;
    font-family: 'Fresca', sans-serif !important;
 
