@@ -3,9 +3,9 @@ BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($s
 
   // console.log($location.path())
 
-  doughnuts = ['https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150', "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" ];
-  pasteries = ['https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=250', "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=250", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=250", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=250" ];
-  images = ['https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=350', "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=350", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=350", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=350" ];
+  var doughnuts = ['https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150', "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" ];
+  var pasteries = ['https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=250', "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=250", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=250", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=250" ];
+  var images = ['https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=350', "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=350", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=350", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=350" ];
 
   var indexer = 0;
 
