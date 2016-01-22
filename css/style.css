@@ -160,14 +160,21 @@ img {
     -1px 1px 0 black,
      3px 1px 0 black;
 }
-.navlink:hover, .navlink:active {
+.navlink:hover {
   color: black;
   text-shadow:
    -1px -1px 0 rgba(255,175,0,1),
     3px -1px 0 rgba(255,175,0,1),
     -1px 1px 0 rgba(255,175,0,1),
      3px 1px 0 rgba(255,175,0,1);
-
+}
+.navlink:active {
+    color: black;
+  text-shadow:
+   -1px -1px 0 rgba(255,175,0,1),
+    3px -1px 0 rgba(255,175,0,1),
+    -1px 1px 0 rgba(255,175,0,1),
+     3px 1px 0 rgba(255,175,0,1);
 }
 .vr {
   text-shadow:
