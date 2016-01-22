@@ -8,7 +8,7 @@ BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($s
             $timeout(function(){
                 indexer = 0;
                 $scope.currentImage = images[indexer];
-                loadImages();
+                $scope.loadImages();
             }, 3000);
         } else if ($location.path() !== '/menu'){
             return
@@ -16,7 +16,7 @@ BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($s
             indexer++;
             $scope.currentImage = images[indexer];
             $timeout(function(){
-            loadImages()
+            $scope.loadImages()
             }, 3000);
         }
     };
@@ -28,7 +28,7 @@ BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($s
         return $location.path();
     }, function(){
         if($location.path() === '/menu') {
-        loadImages();
+        $scope.loadImages();
         }
     });
 }])
