@@ -1,4 +1,5 @@
 BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($scope, $location, $timeout){
+
   $scope.whichMenu = 'Menu';
 
   // console.log($location.path())
@@ -9,7 +10,7 @@ BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($s
 
   var indexer = 0;
 
-  $scope.currentImage =
+  $scope.currentImage = doughnuts[0];
 
   var loadImages = function(array){
     if ($location.path() !== '/menu'){
