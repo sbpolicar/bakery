@@ -40,6 +40,3 @@ BakeryApp.config(['$routeProvider','$locationProvider',function($routeProvider,$
 
 }])
 
-
-
-
