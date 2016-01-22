@@ -196,6 +196,9 @@ ul {
   .title {
     font-size: 300%;
   }
+  .media-q-hider {
+    display: none;
+  }
 }
 @media (max-width: 999px) {
   .menu {
