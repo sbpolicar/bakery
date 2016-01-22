@@ -151,7 +151,7 @@ img {
 .navlink {
   width: auto;
   /*height: 33%;*/
-  color: white;
+  color: rgba(255,175,0,1);
   margin: 0 auto;
   font-size: 2.5em;
   text-shadow:
