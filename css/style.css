@@ -146,6 +146,7 @@ img {
 .navlink {
   width: auto;
   /*height: 33%;*/
+  color: white;
   margin: 0 auto;
   font-size: 2.5em;
   text-shadow:
@@ -164,7 +165,7 @@ img {
     -1px 1px 0 black,
      1px 1px 0 black;
   /*display: none;*/
-  color: white;
+  color: rgba(0,90,175,1);
   font-size: 40px;
    font-family: 'Fresca', sans-serif !important;
 
