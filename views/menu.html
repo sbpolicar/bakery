@@ -4,9 +4,7 @@
   <div>
     <h1 class="title">{{whichMenu}}</h1>
     <h3 class="media-q-hider">Explore our <span ng-if="whichMenu==='Menu'">full</span> {{ whichMenu.toLowerCase(); }}!</h3>
-    <!-- <button ng-click="whichMenu='Menu'" class="menu-toggle">Back</button> -->
   </div>
-
     <!-- Menu Select -->
     <div class="col-sm-3">
       <h1 ng-click="whichMenu='Sweets'" class="menu-subtitle">Sweets</h1><hr ng-if="whichMenu==='Sweets'">
@@ -27,20 +25,15 @@
     <br class="media-q-hider">
     <!-- Menu Selected - which menu -->
     <div class="sweets col-sm-4" ng-if="whichMenu==='Sweets'">
-
         <ul>
           <h1>Doughnuts</h1>
-            <li>Maple Bar</li>
-            <li>Apple Fritter</li>
           <h1>Pasteries</h1>
           <h1>Pies</h1>
           <h1>Cookies</h1>
         </ul>
-
     </div>
 
     <div class="savories col-sm-4" ng-if="whichMenu==='Savories'">
-
         <ul>
           <h1>Quiche</h1>
           <h1>Soup</h1>
@@ -48,11 +41,9 @@
           <h1>Meatball Calzones</h1>
           <h1>Breakfast Casserole</h1>
         </ul>
-
     </div>
 
     <div class="breads col-sm-4" ng-if="whichMenu==='Breads'">
-
         <ul>
           <h1>Apple Cinnamon Bread</h1>
           <h1>Banana Bread</h1>
@@ -60,11 +51,9 @@
           <h1>Pumpkin Bread</h1>
           <h1>Rolls</h1>
         </ul>
-
     </div>
 
     <div class="drinks col-sm-4" ng-if="whichMenu==='Drinks'">
-
         <ul>
           <h1>Espresso</h1>
           <h1>Hot Chocolate</h1>

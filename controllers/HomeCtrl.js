@@ -12,18 +12,18 @@ BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($s
 
   $scope.currentImage = doughnuts[0];
 
-  var loadImages = function(array){
+  var loadImages = function(imagesArray){
     if ($location.path() !== '/menu'){
       return
-    } else if(indexer === array.length-1){
+    } else if(indexer === imagesArray.length-1){
       $timeout(function(){
         indexer = 0;
-        $scope.currentImage = array[indexer];
+        $scope.currentImage = imagesArray[indexer];
         loadImages();
       }, 3000);
     } else {
       indexer++;
-      $scope.currentImage = array[indexer];
+      $scope.currentImage = imagesArray[indexer];
       $timeout(function(){
         loadImages()
       }, 3000);
