@@ -34,7 +34,7 @@ BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($s
   };
   $scope.$watch(function() {
     return $location.path();
- }, function(){
+  }, function(){
     if($location.path() === '/menu') {
       loadImages();
     }
