@@ -144,6 +144,7 @@ img {
   /*float: right;*/
   text-align: center;
   display: flex;
+  border: solid black 1px;
 }
 
 .navlink {
