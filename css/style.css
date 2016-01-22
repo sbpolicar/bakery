@@ -33,7 +33,11 @@ body > div:nth-child(4) {
   text-align: center;
   margin: 0 auto;
 }
-
+.main-header {
+  background-image: url('http://res.cloudinary.com/sbpolicar/image/upload/v1453444945/mt_si_pfmaqz.jpg');
+  background-position: top;
+  background-size: 100% 200%;
+}
 .sweets.ng-scope > span {
   width: 100%;
   margin: 0 auto;
@@ -43,9 +47,7 @@ body > div:nth-child(4) {
   width: 100%;
 }
 .well{
-  background-image: url('http://res.cloudinary.com/sbpolicar/image/upload/v1453444945/mt_si_pfmaqz.jpg');
-  background-position: top;
-  background-size: 200% 200%;
+
   border-color: black;
   margin: 0 auto;
   width: 50%;
