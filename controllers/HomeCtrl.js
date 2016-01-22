@@ -3,40 +3,38 @@ BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($s
 
   // console.log($location.path())
 
-  images = ['bakery/images/door.jpg', 'bakery/images/exteriorcenter.jpg', 'bakery/images/exteriorleft.jpg', 'bakery/images/menuwall.jpg', 'bakery/images/menuwall2.jpg', 'bakery/images/mt_si.jpg', 'bakery/images/wide.jpg'];
+  doughnuts = ['https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150', "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" ];
+  pasteries = ['https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=250', "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=250", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=250", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=250" ];
+  images = ['https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=350', "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=350", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=350", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=350" ];
 
   var indexer = 0;
 
-  $scope.currentImage = images[indexer];
+  $scope.currentImage =
 
-  var loadImages = function(){
-    console.log('fired off function')
-    if(indexer === images.length-1){
-    console.log('end of array')
+  var loadImages = function(array){
+    if ($location.path() !== '/menu'){
+      return
+    } else if(indexer === array.length-1){
       $timeout(function(){
-        console.log('waited 3 seconds after end off array')
         indexer = 0;
-        $scope.currentImage = images[indexer];
+        $scope.currentImage = array[indexer];
         loadImages();
       }, 3000);
-    } else if ($location.path() !== '/menu'){
-      return
-    }
-    else {
-      console.log('round '+indexer)
+    } else {
       indexer++;
-      $scope.currentImage = images[indexer];
+      $scope.currentImage = array[indexer];
       $timeout(function(){
-      console.log('waited 3 seconds round '+indexer)
         loadImages()
       }, 3000);
     }
   };
+
+  // Watch URL, if /menu - begin slideshow. Defaults to doughnuts
   $scope.$watch(function() {
     return $location.path();
   }, function(){
     if($location.path() === '/menu') {
-      loadImages();
+      loadImages(dougnuts);
     }
  });
 }])
