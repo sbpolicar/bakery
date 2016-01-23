@@ -93,6 +93,9 @@ img {
   height: 400px;
   width: 100%;
 }
+.event-images {
+  width: 100%;
+}
 .title{
   /*width: 50%;*/
   letter-spacing: -4px;
