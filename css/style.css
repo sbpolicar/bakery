@@ -143,10 +143,7 @@ img {
   color: black;
   font-family: 'Pacifico', cursive;
 }
-.active-menu {
-  text-shadow: 0 0 100px rgba(255,175,0,1);
-  /*color: white;*/
-}
+
 .nav-container {
   border: solid black 1px;
   margin: 0 auto;
@@ -219,6 +216,11 @@ ul {
 .fa-caret-down {
 
   margin-bottom: -20px !important;
+}
+.active-menu {
+  text-shadow: 0 0 100px rgba(255,175,0,1) !important;
+  color: white;
+  /*color: white;*/
 }
 @media (max-width: 700px) {
   *, .header, .special-header, .navigator{
