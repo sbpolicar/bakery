@@ -180,12 +180,12 @@ img {
      3px 1px 0 rgba(255,175,0,1);
 }
 a:focus {
-    color: black;
+  color: black !important;
   text-shadow:
-   -1px -1px 0 rgba(255,175,0,1),
-    3px -1px 0 rgba(255,175,0,1),
-    -1px 1px 0 rgba(255,175,0,1),
-     3px 1px 0 rgba(255,175,0,1);
+  -1px -1px 0 rgba(255,175,0,1),
+  3px -1px 0 rgba(255,175,0,1),
+  -1px 1px 0 rgba(255,175,0,1),
+    3px 1px 0 rgba(255,175,0,1) !important;
 }
 .vr {
   text-shadow:
