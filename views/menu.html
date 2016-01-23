@@ -8,19 +8,19 @@
     <!-- Menu Select -->
     <div class="col-sm-3">
       <h1 ng-click="whichMenu='Sweets'" class="menu-subtitle">Sweets</h1>
-      <i class="fa fa-3x fa-caret-down"></i>
+      <i ng-class="{'active-menu': whichClass==='Sweets'}" class="fa fa-3x fa-caret-down"></i>
     </div>
     <div  class="col-sm-3">
       <h1 ng-click="whichMenu='Savories'" class="menu-subtitle">Savories</h1>
-      <i class="fa fa-3x fa-caret-down"></i>
+      <i ng-class="{'active-menu': whichClass==='Savories'}" class="fa fa-3x fa-caret-down"></i>
     </div>
     <div  class="col-sm-3">
       <h1 ng-click="whichMenu='Breads'" class="menu-subtitle">Breads</h1>
-      <i class="fa fa-3x fa-caret-down"></i>
+      <i ng-class="{'active-menu': whichClass==='Breads'}" class="fa fa-3x fa-caret-down"></i>
     </div>
     <div class="col-sm-3">
       <h1 ng-click="whichMenu='Drinks'" class="menu-subtitle">Drinks</h1>
-      <i class="fa fa-3x fa-caret-down"></i>
+      <i ng-class="{'active-menu': whichClass==='Drinks'}" class="fa fa-3x fa-caret-down"></i>
     </div>
     <br class="media-q-hider">
     <br class="media-q-hider">
