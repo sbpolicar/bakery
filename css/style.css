@@ -38,7 +38,8 @@ body > div:nth-child(4) {
   padding: 0;
 }
 .contact-form {
-  width: 50%;
+  width: 75%;
+  margin: 0 auto;
 }
 .main-header {
   background-color: rgba(255,255,255,0.85);
