@@ -144,7 +144,6 @@ img {
   font-family: 'Pacifico', cursive;
 }
 .active-menu {
-  transition: 0.5s;
   text-shadow: 0 0 100px rgba(255,175,0,1);
   /*color: white;*/
 }
