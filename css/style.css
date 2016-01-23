@@ -210,6 +210,9 @@ a:focus {
 ul {
   text-align: left;
 }
+.fa-caret-down {
+  margin-bottom: -20px;
+}
 @media (max-width: 700px) {
   *, .header, .special-header, .navigator{
     text-shadow: none;
