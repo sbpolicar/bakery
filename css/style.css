@@ -107,13 +107,7 @@ img {
   margin-bottom: -30px;
   /*margin-top: 70px;*/
 }
-.perspective {
-    -webkit-transform: perspective(600px) rotateX(60deg);
-    -moz-transform: perspective(600px) rotateX(60deg);
-    -ms-transform: perspective(600px) rotateX(60deg);
-    -o-transform: perspective(600px) rotateX(60deg);
-    transform: perspective(600px) rotateX(60deg);
-}
+
 .subtitle{
   margin-bottom: -24px;
   text-align: center;
