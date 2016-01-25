@@ -2,6 +2,7 @@ BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($s
     var images = ['https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150', "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" ];
     var indexer = 0;
 
+    $scope.url = $location.path();
 
     $scope.loadImages = function(images){
         if(indexer === images.length-1){
@@ -28,7 +29,15 @@ BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($s
         return $location.path();
     }, function(){
         if($location.path() === '/menu') {
-        $scope.loadImages(images);
+            $scope.url = $location.path();
+            $scope.loadImages(images);
+        } else if ($location.path() === '/'){
+            $scope.url = $location.path();
+        } else if ($location.path() === '/contact'){
+            $scope.url = $location.path();
+
+        } else if ($location.path() === '/events'){
+            $scope.url = $location.path();
         }
     });
 }])
