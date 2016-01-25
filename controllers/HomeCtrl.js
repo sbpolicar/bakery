@@ -32,7 +32,7 @@ BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($s
             $scope.url = $location.path();
             console.log($scope.url);
             $scope.loadImages(images);
-        } else if ($location.path() === '/'){
+        } else if ($location.path() === '/' && $scope.url !== ''){
             $scope.url = $location.path();
             console.log($scope.url);
         } else if ($location.path() === '/contact'){
