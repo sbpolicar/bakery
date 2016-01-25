@@ -239,7 +239,7 @@ ul {
   1px 1px 0 rgba(255,175,0,1);
   }
   .activeMenu {
-    color: white;
+    color: rgba(255,175,0,1);
     text-shadow:
     -1px -1px 0 black,
   1px -1px 0 black,
