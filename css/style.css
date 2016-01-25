@@ -218,8 +218,12 @@ ul {
   margin-bottom: -20px !important;
 }
 .activeMenu {
-  text-shadow: 0 0 100px rgba(255,175,0,1) !important;
-  color: white;
+  color: black;
+  text-shadow:
+  -1px -1px 0 rgba(255,175,0,1),
+  3px -1px 0 rgba(255,175,0,1),
+  -1px 1px 0 rgba(255,175,0,1),
+  3px 1px 0 rgba(255,175,0,1);
   /*color: white;*/
 }
 @media (max-width: 700px) {
