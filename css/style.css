@@ -217,7 +217,7 @@ ul {
 
   margin-bottom: -20px !important;
 }
-.active-menu {
+.activeMenu {
   text-shadow: 0 0 100px rgba(255,175,0,1) !important;
   color: white;
   /*color: white;*/
