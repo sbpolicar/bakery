@@ -30,14 +30,17 @@ BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($s
     }, function(){
         if($location.path() === '/menu') {
             $scope.url = $location.path();
+            console.log($scope.url);
             $scope.loadImages(images);
         } else if ($location.path() === '/'){
             $scope.url = $location.path();
+            console.log($scope.url);
         } else if ($location.path() === '/contact'){
             $scope.url = $location.path();
-
+            console.log($scope.url);
         } else if ($location.path() === '/events'){
             $scope.url = $location.path();
+            console.log($scope.url);
         }
     });
 }])
