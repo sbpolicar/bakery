@@ -238,13 +238,13 @@ ul {
   -1px 1px 0 rgba(255,175,0,1),
   1px 1px 0 rgba(255,175,0,1);
   }
-    .activeMneu {
-    color: black;
+  .activeMenu {
+    color: white;
     text-shadow:
-    -1px -1px 0 white,
-  1px -1px 0 white,
-  -1px 1px 0 white,
-  1px 1px 0 white;
+    -1px -1px 0 black,
+  1px -1px 0 black,
+  -1px 1px 0 black,
+  1px 1px 0 black;
   }
   .bakery-image {
     width: 70%;
