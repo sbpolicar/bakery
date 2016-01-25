@@ -228,8 +228,10 @@ ul {
 }
 @media (max-width: 700px) {
   *, .header, .special-header, .navigator{
-    text-shadow: 0 0 0 transparent;
    font-family: 'Fresca', sans-serif;
+  }
+  .navlink {
+    text-shadow: 0 0 0 transparent;
   }
   .bakery-image {
     width: 70%;
