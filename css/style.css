@@ -231,7 +231,12 @@ ul {
    font-family: 'Fresca', sans-serif;
   }
   .navlink {
-    text-shadow: 0 0 0 transparent;
+    color: black;
+    text-shadow:
+    -1px -1px 0 rgba(255,175,0,1),
+  1px -1px 0 rgba(255,175,0,1),
+  -1px 1px 0 rgba(255,175,0,1),
+  1px 1px 0 rgba(255,175,0,1);
   }
   .bakery-image {
     width: 70%;
