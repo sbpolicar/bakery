@@ -2,7 +2,7 @@ BakeryApp.controller('HomeCtrl', ['$scope', '$location', '$timeout', function($s
     var images = ['https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150', "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150", "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" ];
     var indexer = 0;
 
-    $scope.url = $location.path();
+    $scope.url = '';
 
     $scope.loadImages = function(images){
         if(indexer === images.length-1){
