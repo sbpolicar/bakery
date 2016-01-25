@@ -182,14 +182,14 @@ img {
     -1px 1px 0 rgba(255,175,0,1),
      3px 1px 0 rgba(255,175,0,1);
 }
-/*.navlink:focus {
-  color: black !important;
+.navlink:focus {
+  color: black;
   text-shadow:
   -1px -1px 0 rgba(255,175,0,1),
-  3px -1px 0 rgba(255,175,0,1),
+  1px -1px 0 rgba(255,175,0,1),
   -1px 1px 0 rgba(255,175,0,1),
-    3px 1px 0 rgba(255,175,0,1) !important;
-}*/
+    1px 1px 0 rgba(255,175,0,1);
+}
 .vr {
   text-shadow:
    -1px -1px 0 black,
