@@ -185,7 +185,7 @@ img {
      3px 1px 0 rgba(255,175,0,1);
 }
 .navlink:focus {
-  text-decoration: none;
+  text-decoration: none !important;
   color: black;
   text-shadow:
   -1px -1px 0 rgba(255,175,0,1),
