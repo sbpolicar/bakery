@@ -115,13 +115,13 @@ img {
      4px 1px 0 #000;
   color: rgba(255,175,0,1);
   text-align: center;
-  margin-bottom: -30px;
+  /*margin-bottom: -30px;*/
   font-family: 'Pacifico', cursive;
   /*margin-top: 70px;*/
 }
 
 .subtitle{
-  margin-bottom: -24px;
+  /*margin-bottom: -24px;*/
   text-align: center;
   text-shadow:
    -1px -1px 0 rgba(255,175,0,1),
