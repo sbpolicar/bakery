@@ -36,6 +36,10 @@ body > div:nth-child(4) {
 .home-info {
 
 }
+.tripadvisor {
+  height: 250px;
+  width: 250px;
+}
 .col-sm-5, .col-sm-7 {
   margin: 0;
   padding: 0;
