@@ -106,7 +106,6 @@ img {
 }
 .title{
   /*width: 50%;*/
-  font-family: Copperplate, fantasy;
   letter-spacing: -4px;
   font-size: 900%;
   text-shadow:
@@ -117,6 +116,7 @@ img {
   color: rgba(255,175,0,1);
   text-align: center;
   margin-bottom: -30px;
+  font-family: 'Pacifico', cursive;
   /*margin-top: 70px;*/
 }
 
@@ -129,7 +129,7 @@ img {
     -1px 1px 0 rgba(255,175,0,1),
      2px 1px 0 rgba(255,175,0,1);
   color: black;
-  font-family: 'Pacifico', cursive;
+  font-family: Copperplate, fantasy;
 }
 .menu-subtitle{
   margin: 0;
