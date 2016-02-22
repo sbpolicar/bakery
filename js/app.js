@@ -1,13 +1,10 @@
-var BakeryApp = angular.module('BakeryApp',['ngMaterial','ngAnimate','ngRoute']);
+var BakeryApp = angular.module('BakeryApp',['ngAnimate','ngRoute', 'simple-slideshow']);
 
 BakeryApp.run([function(){
-
 }]);
 
 BakeryApp.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider) {
-
     $locationProvider.html5Mode(false);
-
     $routeProvider
     .when('/',{
       templateUrl: 'views/home.html'
@@ -15,8 +12,8 @@ BakeryApp.config(['$routeProvider','$locationProvider',function($routeProvider,$
     .when('/menu',{
       templateUrl: 'views/menu.html'
     })
-    .when('/contact',{
-      templateUrl: 'views/contact.html'
+    .when('/about',{
+      templateUrl: 'views/about.html'
     })
     .when('/events',{
       templateUrl: 'views/events.html'
@@ -24,6 +21,5 @@ BakeryApp.config(['$routeProvider','$locationProvider',function($routeProvider,$
     .otherwise({
       templateUrl:'views/404.html'
     });
-
 }]);
 

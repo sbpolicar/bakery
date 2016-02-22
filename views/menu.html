@@ -1,39 +1,35 @@
-
-<div class="row">
-    <h1 class="title">{{whichMenu}}</h1>
+<div class="row text-center">
+    <!-- <h1 class="title">{{whichMenu}}</h1> -->
 <div class="menu row">
   <div>
     <h3 class="media-q-hider">Explore our <span ng-if="whichMenu==='Menu'">full</span> {{ whichMenu.toLowerCase(); }}!</h3>
   </div>
     <!-- Menu Select -->
     <div class="col-sm-3">
-      <h1 ng-class="{'active-menu': whichClass==='Sweets'}" ng-click="whichMenu='Sweets'" class="menu-subtitle">Sweets</h1>
-      <i  class="fa fa-3x fa-caret-down"></i>
+      <h1 ng-class="{'active-menu': whichClass==='Sweets'}" ng-click="whichMenu='Sweets'" class="menu-subtitle">Sweets<br><i class="fa fa-caret-down"></i></h1>
     </div>
     <div  class="col-sm-3">
-      <h1 ng-class="{'active-menu': whichClass==='Savories'}" ng-click="whichMenu='Savories'" class="menu-subtitle">Savories</h1>
-      <i  class="fa fa-3x fa-caret-down"></i>
+      <h1 ng-class="{'active-menu': whichClass==='Savories'}" ng-click="whichMenu='Savories'" class="menu-subtitle">Savories<br><i class="fa fa-caret-down"></i></h1>
     </div>
     <div  class="col-sm-3">
-      <h1 ng-class="{'active-menu': whichClass==='Breads'}" ng-click="whichMenu='Breads'" class="menu-subtitle">Breads</h1>
-      <i  class="fa fa-3x fa-caret-down"></i>
+      <h1 ng-class="{'active-menu': whichClass==='Breads'}" ng-click="whichMenu='Breads'" class="menu-subtitle">Breads<br><i class="fa fa-caret-down"></i></h1>
     </div>
     <div class="col-sm-3">
-      <h1 ng-class="{'active-menu': whichClass==='Drinks'}" ng-click="whichMenu='Drinks'" class="menu-subtitle">Drinks</h1>
-      <i  class="fa fa-3x fa-caret-down"></i>
+      <h1 ng-class="{'active-menu': whichClass==='Drinks'}" ng-click="whichMenu='Drinks'" class="menu-subtitle">Drinks<br><i class="fa fa-caret-down"></i></h1>
     </div>
+
     <br class="media-q-hider">
     <br class="media-q-hider">
     <br class="media-q-hider">
     <br class="media-q-hider">
     <br class="media-q-hider">
     <!-- Menu Selected - which menu -->
-    <div class="sweets col-sm-4" ng-if="whichMenu==='Sweets'">
+    <div ng-if="whichMenu==='Menu' || whichMenu==='Sweets'" id="menu-page" class="sweets col-sm-4">
         <ul>
-          <h1>Doughnuts</h1>
-          <h1>Pastries</h1>
-          <h1>Pies</h1>
-          <h1>Cookies</h1>
+          <h1><a ng-if="whichMenu==='Sweets'" ng-click="loadImages(doughnuts)">Doughnuts</a></h1>
+          <h1><a ng-if="whichMenu==='Sweets'" ng-click="loadImages(pastries)">Pastries</a></h1>
+          <h1><a ng-if="whichMenu==='Sweets'" ng-click="loadImages(pies)">Pies</a></h1>
+          <h1><a ng-if="whichMenu==='Sweets'" ng-click="loadImages(cookies)">Cookies</a></h1>
         </ul>
     </div>
 
@@ -70,10 +66,13 @@
     </div>
 
     <div class="images col-sm-8" ng-if="whichMenu!=='Menu'">
-      <div class="center">
-        <div ng-click="loadImages()"><img src="{{currentImage}}"></div>
-      </div>
-
+        <div slideshow>
+          <div class="slide" slide ng-repeat="slide in slides"></div>
+        </div>
+      <!-- <div class="center"> -->
+        <!-- <div><img class="slide" ng-src="{{currentImage}}"></div> -->
+      <!-- </div> -->
+    <!-- <div ng-repeat="item in {{loader}}"></div> -->
 
     </div>
 
