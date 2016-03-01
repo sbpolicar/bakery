@@ -1,21 +1,21 @@
-<div class="row text-center">
+<div class=" text-center">
     <!-- <h1 class="title">{{whichMenu}}</h1> -->
 <div class="menu row">
-  <div>
-    <h3 class="media-q-hider">Explore our <span ng-if="whichMenu==='Menu'">full</span> {{ whichMenu.toLowerCase(); }}!</h3>
-  </div>
+  <!-- <div> -->
+    <!-- <h3 class="media-q-hider">Explore our <span ng-if="whichMenu==='Menu'">full</span> {{ whichMenu.toLowerCase(); }}!</h3> -->
+  <!-- </div> -->
     <!-- Menu Select -->
     <div class="col-sm-3">
-      <h1 ng-class="{'active-menu': whichClass==='Sweets'}" ng-click="whichMenu='Sweets'" class="menu-subtitle">Sweets<br><i class="fa fa-caret-down"></i></h1>
+      <h1 ng-class="{'menu-subtitle-active': whichMenu==='Sweets'}" ng-click="whichMenu='Sweets'; loadImages(defaultSlide)" class="menu-subtitle">Sweets<br><i class="fa fa-caret-down"></i></h1>
     </div>
     <div  class="col-sm-3">
-      <h1 ng-class="{'active-menu': whichClass==='Savories'}" ng-click="whichMenu='Savories'" class="menu-subtitle">Savories<br><i class="fa fa-caret-down"></i></h1>
+      <h1 ng-class="{'menu-subtitle-active': whichMenu==='Savories'}" ng-click="whichMenu='Savories'; loadImages(defaultSlide)" class="menu-subtitle">Savories<br><i class="fa fa-caret-down"></i></h1>
     </div>
     <div  class="col-sm-3">
-      <h1 ng-class="{'active-menu': whichClass==='Breads'}" ng-click="whichMenu='Breads'" class="menu-subtitle">Breads<br><i class="fa fa-caret-down"></i></h1>
+      <h1 ng-class="{'menu-subtitle-active': whichMenu==='Breads'}" ng-click="whichMenu='Breads'; loadImages(defaultSlide)" class="menu-subtitle">Breads<br><i class="fa fa-caret-down"></i></h1>
     </div>
     <div class="col-sm-3">
-      <h1 ng-class="{'active-menu': whichClass==='Drinks'}" ng-click="whichMenu='Drinks'" class="menu-subtitle">Drinks<br><i class="fa fa-caret-down"></i></h1>
+      <h1 ng-class="{'menu-subtitle-active': whichMenu==='Drinks'}" ng-click="whichMenu='Drinks'; loadImages(defaultSlide)" class="menu-subtitle">Drinks<br><i class="fa fa-caret-down"></i></h1>
     </div>
 
     <br class="media-q-hider">
@@ -24,48 +24,48 @@
     <br class="media-q-hider">
     <br class="media-q-hider">
     <!-- Menu Selected - which menu -->
-    <div ng-if="whichMenu==='Menu' || whichMenu==='Sweets'" id="menu-page" class="sweets col-sm-4">
+    <div ng-if="whichMenu==='Menu' || whichMenu==='Sweets'" id="menu-page" class="sweets col-sm-2">
         <ul>
-          <h1><a ng-if="whichMenu==='Sweets'" ng-click="loadImages(doughnuts)">Doughnuts</a></h1>
-          <h1><a ng-if="whichMenu==='Sweets'" ng-click="loadImages(pastries)">Pastries</a></h1>
-          <h1><a ng-if="whichMenu==='Sweets'" ng-click="loadImages(pies)">Pies</a></h1>
-          <h1><a ng-if="whichMenu==='Sweets'" ng-click="loadImages(cookies)">Cookies</a></h1>
+          <h1><a ng-click="loadImages(doughnuts)"><i class="fa fa-caret-right"></i>&nbsp;Doughnuts</a></h1><br>
+          <h1><a ng-click="loadImages(pastries)"><i class="fa fa-caret-right"></i>&nbsp;Pastries</a></h1><br>
+          <h1><a ng-click="loadImages(pies)"><i class="fa fa-caret-right"></i>&nbsp;Pies</a></h1><br>
+          <h1><a ng-click="loadImages(cookies)"><i class="fa fa-caret-right"></i>&nbsp;Cookies</a></h1><br>
         </ul>
     </div>
 
-    <div class="savories col-sm-4" ng-if="whichMenu==='Savories'">
+    <div class="savories col-sm-2" ng-if="whichMenu==='Savories'">
         <ul>
-          <h1>Quiche</h1>
-          <h1>Soup</h1>
-          <h1>Sandwiches</h1>
-          <h1>Meatball Calzones</h1>
-          <h1>Breakfast Casserole</h1>
+          <h1><a ng-click="loadImages(quiche)"><i class="fa fa-caret-right"></i>&nbsp;Quiche</a></h1><br>
+          <h1><a ng-click="loadImages(salad)"><i class="fa fa-caret-right"></i>&nbsp;Soup, Salad &amp; more</a></h1><br>
+          <h1><a ng-click="loadImages(sandwiches)"><i class="fa fa-caret-right"></i>&nbsp;Sandwiches</a></h1><br>
+          <h1><a ng-click="loadImages(savories)"><i class="fa fa-caret-right"></i>&nbsp;Calzones &amp; more</a></h1><br>
+          <!-- <h1><a><i class="fa fa-caret-right"></i>&nbsp;Breakfast Casserole</a></h1><br> -->
         </ul>
     </div>
 
-    <div class="breads col-sm-4" ng-if="whichMenu==='Breads'">
+    <div class="breads col-sm-2" ng-if="whichMenu==='Breads'">
         <ul>
-          <h1>Apple Cinnamon Bread</h1>
-          <h1>Banana Bread</h1>
-          <h1>Zucchini Bread</h1>
-          <h1>Pumpkin Bread</h1>
-          <h1>Rolls</h1>
+          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Apple Cinnamon Bread</a></h1><br>
+          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Banana Bread</a></h1><br>
+          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Zucchini Bread</a></h1><br>
+          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Pumpkin Bread</a></h1><br>
+          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Rolls</a></h1><br>
         </ul>
     </div>
 
-    <div class="drinks col-sm-4" ng-if="whichMenu==='Drinks'">
+    <div class="drinks col-sm-2" ng-if="whichMenu==='Drinks'">
         <ul>
-          <h1>Espresso</h1>
-          <h1>Hot Chocolate</h1>
-          <h1>Tea</h1>
-          <h1>Orange Juice / Apple Juice / Milk / Chocolate milk</h1>
-          <h1>San Pellegrino</h1>
-          <h1>Izzy</h1>
-          <h1>Coke and Pepsi products</h1>
+          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Espresso</a></h1><br>
+          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Hot Chocolate</a></h1><br>
+          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Tea</a></h1><br>
+          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Orange Juice / Apple Juice / Milk / Chocolate milk</a></h1><br>
+          <h1><a><i class="fa fa-caret-right"></i>&nbsp;San Pellegrino</a></h1><br>
+          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Izzy</a></h1><br>
+          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Coke and Pepsi products</a></h1><br>
         </ul>
     </div>
 
-    <div class="images col-sm-8" ng-if="whichMenu!=='Menu'">
+    <div class="images" ng-if="whichMenu!=='Menu'">
         <div slideshow>
           <div class="slide" slide ng-repeat="slide in slides"></div>
         </div>

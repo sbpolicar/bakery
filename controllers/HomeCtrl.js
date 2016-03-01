@@ -1,7 +1,5 @@
 BakeryApp
 .controller('HomeCtrl', ['$scope', '$location', '$timeout', '$http', function($scope, $location, $timeout, $http){
-    console.log(isOpera, isFirefox, isSafari, isIE, isEdge, isChrome, isBlink, isMobile);
-
     if(isOpera === true){
       $scope.browserEnabled = false;
     } else if (isFirefox === true) {
@@ -18,17 +16,25 @@ BakeryApp
       $scope.browserEnabled = false;
     }
 
-    var indexer = 0;
-    var imageData = resource.images;
+    var imageData = resource.resources;
+    $scope.defaultSlide = [{name:"Select a category and start exploring", url:"http://res.cloudinary.com/spolicar/image/upload/v1456555051/seasonal/Valentines.jpg"}];
 
     $scope.showToggle = ' ';
     $scope.doughnuts = [];
     $scope.pastries = [];
     $scope.cookies = [];
     $scope.pies = [];
-    $scope.slides = [];
+    $scope.savories = [];
+    $scope.misc = [];
+    $scope.seasonal = [];
+    $scope.quiche = [];
+    $scope.sandwiches = [];
+    $scope.bread = [];
+    $scope.salad = [];
+    $scope.slides = $scope.defaultSlide;
     $scope.url = '';
     $scope.whichMenu = 'Sweets';
+    $scope.whichEvent = 'videos';
 
     var buildImages = function(){
         imageData.forEach(function(image){
@@ -40,6 +46,20 @@ BakeryApp
                 $scope.cookies.push({name: image.name, url: image.url});
             } else if (image.public_id.indexOf('pies') != -1){
                 $scope.pies.push({name: image.name, url: image.url});
+            } else if (image.public_id.indexOf('savories') != -1) {
+                $scope.savories.push({name: image.name, url: image.url});
+            } else if (image.public_id.indexOf('misc') != -1) {
+                $scope.misc.push(image.url);
+            } else if (image.public_id.indexOf('seasonal') != -1) {
+                $scope.seasonal.push({name: image.name, url: image.url});
+            } else if (image.public_id.indexOf('quiche') != -1) {
+                $scope.quiche.push({name: image.name, url: image.url});
+            } else if (image.public_id.indexOf('sandwiches') != -1) {
+                $scope.sandwiches.push({name: image.name, url: image.url});
+            } else if (image.public_id.indexOf('salad') != -1) {
+                $scope.salad.push({name: image.name, url: image.url});
+            } else if (image.public_id.indexOf('bread') != -1) {
+                $scope.bread.push({name: image.name, url: image.url});
             }
         });
     }
@@ -47,26 +67,6 @@ BakeryApp
     $scope.loadImages = function(arr){
         $scope.slides = [];
         $scope.slides = arr;
-        // console.log(arr)
-        // console.log('load called')
-        // if(arr.length === 1 || $location.path() !== '/menu'){
-        //     console.log('single item array - returned')
-        //     $scope.currentImage = arr[0];
-        //     return;
-        // }else if(indexer === arr.length-1){
-        //     console.log('end of array - recalling');
-        //     $timeout(function(){
-        //         indexer = 0;
-        //         $scope.loadImages(arr);
-        //     }, 3000);
-        // }else{
-        //     console.log('current image loaded')
-        //     $scope.currentImage = arr[indexer];
-        //     indexer++;
-        //     $timeout(function(){
-        //         $scope.loadImages(arr);
-        //     }, 4000);
-        // }
     };
 
     $scope.$watch(function() {
@@ -74,17 +74,12 @@ BakeryApp
     }, function(){
         if($location.path() === '/menu') {
             $scope.url = $location.path();
-            console.log($scope.url);
-            // $scope.loadImages($scope.doughnuts);
         } else if ($location.path() === '/' && $scope.url !== ''){
             $scope.url = $location.path();
-            console.log($scope.url);
         } else if ($location.path() === '/about'){
             $scope.url = $location.path();
-            console.log($scope.url);
         } else if ($location.path() === '/events'){
             $scope.url = $location.path();
-            console.log($scope.url);
         }
     });
 

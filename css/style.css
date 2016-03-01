@@ -36,6 +36,18 @@ body > div:nth-child(4) {
   text-align: center;
   margin: 0 auto;
 }
+a {
+  color: #DED7A9;
+}
+a:hover {
+  text-decoration: none;
+  transition: all .3s;
+  cursor: pointer;
+  color: white;
+}
+a:focus {
+  color: gray;
+}
 .overlay {
   position: fixed;
   left: 0;
@@ -107,8 +119,8 @@ body > div:nth-child(4) {
 
 .browser-title {
   margin-bottom: -25px;
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
 }
 
 .main-image {
@@ -124,8 +136,8 @@ body > div:nth-child(4) {
   width: 100%;
 }
 .about-image {
-  width: 75%;
-    border: solid black 2px;
+  width: 100%;
+  border: solid black 2px;
   border-left: solid black 10px;
   border-right: solid black 10px;
   border-radius: 10px;
@@ -135,7 +147,7 @@ body > div:nth-child(4) {
   text-shadow: -1px -1px 0 black, 2px -1px 0 black, -1px 1px 0 black, 2px 1px 0 black;
   color: white;
   /*font-family: Copperplate, fantasy;*/
-  width: 75%;
+  width: 100%;
   text-align: left;
 }
 .about-button {
@@ -145,6 +157,11 @@ body > div:nth-child(4) {
 .about-container {
   /*background-color: rgba(0,0,0,0.5);*/
   height: 100%;
+}
+.about-hr {
+  color: white;
+  background-color: white;
+  border: white;
 }
 .header-container {
   /*border-radius: 5px;*/
@@ -163,9 +180,13 @@ hr {
 }
 
 .images {
-  padding: 20px;
+  /*padding: 20px;*/
 }
-
+body > div.container-fluid > ng-view > div > div > div.images.ng-scope > div > div.slide-container.col-md-8 > div > h1 {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
 .icon-btn {
   width: 50px;
   height: 50px;
@@ -203,7 +224,13 @@ img {
 .event-images {
   height: 100;
 }
-
+.event-content {
+  /*padding: 3%;*/
+}
+.event-videos {
+  /*width: 33%;*/
+  margin: 0;
+}
 body > div:nth-child(5) > ng-view > div > div > div > h1 {
   color: black;
 }
@@ -236,13 +263,13 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
   /*margin-bottom: -30px;*/
   font-family: vivaldi;
   /* georgia’s: */
-transform: rotate(345deg);
-border: 0px solid #000000;
-font-family: Vivaldi;
-/*font-size: 250px;*/
-color: #DED7A9;
-margin-bottom: -1.3%;
-/*line-height: 311px;*/
+  transform: rotate(345deg);
+  border: 0px solid #000000;
+  font-family: Vivaldi;
+  /*font-size: 250px;*/
+  color: #DED7A9;
+  margin-bottom: -1.3%;
+  /*line-height: 311px;*/
   /*margin-top: 70px;*/
 }
 
@@ -268,6 +295,21 @@ margin-bottom: -1.3%;
   font-family: Copperplate, fantasy;
 }
 
+.subtitle > a {
+  text-decoration: none;
+  color: #DED7A9;
+}
+
+.subtitle > a:hover {
+  cursor: pointer;
+  transition: all 0.5s;
+  color: white;
+}
+
+.subtitle-active {
+  color: white !important;
+}
+
 .main-subtext {
   /*margin-bottom: -24px;*/
   letter-spacing: .65em;
@@ -285,8 +327,17 @@ margin-bottom: -1.3%;
   text-shadow: -1px -1px 0 #DED7A9, 2px -1px 0 #DED7A9, -1px 1px 0 #DED7A9, 2px 1px 0 #DED7A9;
   color: black;
   font-family: 'Pacifico', cursive;
+  transition: color 0.7s;
 }
-
+.menu-subtitle:hover {
+  text-shadow: -1px -1px 0 black, 2px -1px 0 black, -1px 1px 0 black, 2px 1px 0 black;
+  cursor: pointer;
+  color: white;
+}
+.menu-subtitle-active {
+  text-shadow: -1px -1px 0 black, 2px -1px 0 black, -1px 1px 0 black, 2px 1px 0 black;
+  color: white;
+}
 .nav-container {
   border: solid black 1px;
   margin: 0 auto;
@@ -314,6 +365,7 @@ margin-bottom: -1.3%;
   margin: 0 auto;
   font-size: 2.5em;
   text-shadow: -1px -1px 0 black, 2px -1px 0 black, -1px 1px 0 black, 2px 1px 0 black;
+  transition: color 0.7s;
 }
 
 .navlink:hover {
@@ -323,6 +375,7 @@ margin-bottom: -1.3%;
 }
 
 .navlink:focus {
+  /*transition: color 1s;*/
   text-decoration: none !important;
   color: black;
   text-shadow: -1px -1px 0 #DED7A9, 1px -1px 0 #DED7A9, -1px 1px 0 #DED7A9, 1px 1px 0 #DED7A9;
@@ -335,34 +388,73 @@ margin-bottom: -1.3%;
   font-size: 40px;
   font-family: 'Fresca', sans-serif !important;
 }
-
+.row {
+  animation: fadeIn .3s;
+}
+.gallery-image {
+  height: 250px;
+  width: 250px;
+  padding: 2px;
+  background-color: black;
+  transition: all 1s;
+}
+.gallery-image:hover {
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 0 10px white;
+}
+figure {
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  display: inline-block;
+  margin: 10px;
+}
+figcaption {
+  font-size: 1.5em;
+}
 .menu {
   margin: 0 auto;
-  width: 75% !important;
-  min-height: 500px;
-  border: solid black 1px;
-  background-color: rgba(255, 255, 255, 0.85);
-  border-radius: 4px;
+  /*width: 100%;*/
+  /*min-height: 500px;*/
+  /*border: solid black 1px;*/
+  /*background-color: rgba(255, 255, 255, 0.85);*/
+  /*border-radius: 4px;*/
+  padding: 20px;
 }
 
 ul {
   text-align: left;
+  padding: 0;
 }
 
+ul > * {
+  margin: 0;
+}
+.menu-items {
+  border-left: solid rgba(0,0,0,0.5) 2px;
+}
 .fa-caret-down {
   margin-bottom: -20px !important;
 }
 
 img.slide {
-  height: 250px;
-  width: 250px;
-  animation: fadeInRight 1s;
+  text-align: center;
+  height: auto;
+  width: 75%;
+  /*animation: fadeInRight 1s;*/
+  border: solid black 2px;
+  border-left: solid black 10px;
+  border-right: solid black 10px;
+  border-radius: 10px;
+  max-height: 550px;
+  /*max-width: 450px;*/
 }
 .dot {
   text-decoration: none;
   text-align: center;
   padding: 2px;
-  font-size: 10px;
+  font-size: 24px;
   /*font-size: 50px;*/
 }
 .activeMenu {
@@ -438,6 +530,10 @@ img.slide {
   body {
     background-size: 200% 200%;
     /*background-position: right;*/
+  }
+  ul {
+    text-align: center;
+    padding: 0;
   }
   .well {
     width: 90%;

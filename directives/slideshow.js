@@ -62,15 +62,15 @@ SlideShow.directive('slide', ['$parse', function($parse){
 
 angular.module("template/slideshow.html", []).run(["$templateCache", function($templateCache) {
     $templateCache.put("template/slideshow.html",
-        '<div class="slide-container">' +
-        '<div class="slide-image-wrap"><img class="slide-image slide" ng-src="{{currentslide.url}}" alt="{{currentslide.name}}" /><h3 class="subtitle">{{currentslide.name}}</h3></div>' +
-        '</div>' +
-        '<div class="slides-wrap"><span ng-transclude></span></div>'
+        '<div class="slides-wrap col-md-2"><span ng-transclude></span></div>' +
+        '<div class="slide-container col-md-8">' +
+        '<div class="slide-image-wrap"><h1 class="subtitle">{{currentslide.name}}</h1><img class="slide-image slide" ng-src="{{currentslide.url}}" alt="{{currentslide.name}}" /></div>' +
+        '</div>'
     );
 }]);
 
 angular.module("template/slide.html", []).run(["$templateCache", function($templateCache) {
     $templateCache.put("template/slide.html",
-        '<a class="dot" href><i class="fa fa-circle fa-fw"></i>{{slide.name}}</a>'
+        '<div class="menu-items"><a class="dot" href> &dash; {{slide.name}}</a>'
     );
 }]);

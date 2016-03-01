@@ -1,9 +1,96 @@
-<h1 class="title">Events</h1>
 <div class="menu">
-<div class="row">
-  <div class="col-sm-5">
-    <div>
-      <h3><a>Jazz walk</a></h3>
+  <div class="row text-center">
+
+    <div class="col-sm-6">
+    <hr ng-if="whichEvent==='videos'" class="about-hr">
+    <h2 class="subtitle"><a ng-click="whichEvent='videos'">Videos</a></h2>
+    <hr ng-if="whichEvent==='videos'" class="about-hr">
+    </div>
+
+    <div class="col-sm-6 event-images">
+    <hr ng-if="whichEvent==='gallery'" class="about-hr">
+    <h2 class="subtitle"><a ng-click="whichEvent='gallery'">Photo Gallery</a></h2>
+    <hr ng-if="whichEvent==='gallery'" class="about-hr">
+    </div>
+  </div>
+  <div ng-if="whichEvent==='videos'" class="row event-content">
+    <div class="event-videos col-md-6">
+      <h2 class="subtitle">John D. Spellman Award Ceremony</h2>
+      <iframe width="100%" height="450" src="https://www.youtube.com/embed/0PH_wQJFpwg?start=2243" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-6 event-content">
+      <h2 class="subtitle">Chaplain's Subaru featuring Georgia's Bakery</h2>
+      <iframe src="https://player.vimeo.com/video/142172476" width="100%" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <div class="col-md-6">
+      <h2 class="subtitle">Dartmouth Choir at Georgia's Bakery</h2>
+      <video src="https://m.facebook.com/video/video.php?v=1513679758926216" autostart="0" width="100%" height="auto" frameborder="0" controls webkitallowfullscreen mozallowfullscreen allowfullscreen></video>
+    </div>
+    <div class="col-md-6 text-center">
+      <h2 class="subtitle">Aria Prame Trio at Georgia's Bakery (Jazz Walk)</h2>
+      <video src="https://m.facebook.com/video/video.php?v=1427117064249153" autostart="0" width="30%" height="auto" frameborder="0" controls webkitallowfullscreen mozallowfullscreen allowfullscreen></video>
+    </div>
+  </div>
+  <div ng-if="whichEvent==='gallery'" class="row event-content">
+    <div class="col-md-12 text-center">
+
+      <figure>
+        <figcaption class="subtitle">Farmer's Markets<br> (Carnation, Sammamish, Duvall, Maple Valley)</figcaption>
+        <img class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xaf1/t31.0-8/10668924_1454025258225000_3104468846410782562_o.jpg">
+        <!-- <img class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xla1/v/t1.0-9/11895941_1487800214847504_8627610522851283235_n.jpg?oh=1339a34678b571778fc42120b5dbe19a&oe=576B745C"> -->
+      </figure>
+
+      <figure>
+        <figcaption class="subtitle">North Bend Jazz Walk 2015<br> (Pictured: Aria Prame Trio)</figcaption>
+        <img class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xtf1/t31.0-8/11038144_1427113704249489_9083307505200229646_o.jpg">
+      </figure>
+
+      <figure>
+        <figcaption class="subtitle">Twin Peaks Festival 2015</figcaption>
+        <img class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/11903946_1487800301514162_4311942890543230177_n.jpg?oh=c6eb29138008bc41921635529163f66b&oe=575DA178">
+      </figure>
+
+      <figure>
+        <figcaption class="subtitle">North Bend Blues Walk 2015</figcaption>
+        <img class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xat1/t31.0-8/12022331_1498877800406412_1694463907173210989_o.jpg">
+      </figure>
+
+      <figure>
+        <figcaption class="subtitle">North Bend Car Show 2015</figcaption>
+        <img class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpf1/v/t1.0-9/11866500_1487799934847532_5580035552314168549_n.jpg?oh=6476e5603d28e8e854efdf29832e91c2&oe=574FCF3D">
+      </figure>
+
+      <figure>
+        <figcaption class="subtitle">Another busy day at the Bakery!</figcaption>
+        <img class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xlt1/v/t1.0-9/11880606_1487803714847154_529557334239287654_n.jpg?oh=add39946caa4e0c934b5e506895c705e&oe=57684C6B">
+      </figure>
+
+      <figure>
+        <figcaption class="subtitle">Behind the Scenes!</figcaption>
+        <img class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xtf1/t31.0-8/12646711_1526136177680574_2769281849119587799_o.jpg">
+      </figure>
+
+      <figure>
+        <figcaption class="subtitle">Once upon a time in 1928</figcaption>
+        <img class="gallery-image" src="http://res.cloudinary.com/spolicar/image/upload/v1456792705/misc/BellingerBakery.jpg">
+      </figure>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--       <h3><a>Jazz walk</a></h3>
       <h3><a>Block Party</a></h3>
       <h3><a>Car Show</a></h3>
       <h3><a>Farmer’s Markets (Carnation, Sammamish, Duvall, Maple Valley)</a></h3>
@@ -20,12 +107,4 @@
       <h3><a>Halloween costume day</a></h3>
       <h3><a>12th Man Tailgating Party</a></h3>
       <h3><a>Wedding Beaver Lake Lodge</a></h3>
-      <h3><a>Christmas Tree Farm</a></h3>
-    </div>
-  </div>
-  <div class="col-sm-7 event-images">
-    <li>Images</li>
-  </div>
-</div>
-</div>
-<hr>
+      <h3><a>Christmas Tree Farm</a></h3> -->
