@@ -10,11 +10,16 @@ html {
 
 ul > li {
   text-align: left !important;
+  text-shadow: -1px -1px 0 black, 2px -1px 0 black, -1px 1px 0 black, 2px 1px 0 black;
+
+}
+ul > h1 {
+  color: white;
 }
 
 body {
   overflow-x: hidden;
-  background-color: #DED7A9;
+  background-color: white;
   /*box-shadow: inset 0 0 50px rgba(0,0,0,1);*/
   height: 100%;
   width: 100%;
@@ -37,7 +42,12 @@ body > div:nth-child(4) {
   margin: 0 auto;
 }
 a {
-  color: #DED7A9;
+  color: #B9AA64;
+  text-shadow: -1px -1px 0 black, 2px -1px 0 black, -1px 1px 0 black, 2px 1px 0 black;
+
+}
+body > div.container-fluid > ng-view > div > div.col-md-5.text-center > a {
+  text-shadow: none;
 }
 a:hover {
   text-decoration: none;
@@ -46,15 +56,17 @@ a:hover {
   color: white;
 }
 a:focus {
+  text-decoration: none;
   color: gray;
 }
 .overlay {
+  box-shadow: inset 0 0 200px black;
   position: fixed;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.29);
   z-index: -1;
 }
 .col-sm-5,
@@ -80,15 +92,22 @@ a:focus {
 }
 
 #map {
-  height: 350px;
-  width: 80%;
+  z-index: 999;
+  height: 600px;
+  width: 97%;
+  text-align: center;
+  margin: 0 auto;
   border: solid black 2px;
   border-left: solid black 10px;
   border-right: solid black 10px;
   border-radius: 10px;
+  position: absolute;
+  animation: slideInRight 1s;
   /*float: right;*/
 }
-
+#map.ng-hide {
+  animation: fadeOutDown .5s;
+}
 .well {
   border-color: black;
   margin: 0 auto;
@@ -122,7 +141,30 @@ a:focus {
   width: 40%;
   height: 40%;
 }
-
+.home-image-container {
+  position: relative;
+  margin: 0 auto;
+}
+.home-image {
+  height: auto;
+  max-height: 600px;
+  width: 97%;
+  text-align: center;
+  animation: slideInRight 1s;
+  border: solid black 2px;
+  border-left: solid black 10px;
+  border-right: solid black 10px;
+  border-radius: 10px;
+  position: absolute;
+  margin: 0 auto;
+  /*width: 93%;*/
+  /*height: 400px;*/
+}
+.home-image.ng-leave {
+  animation: fadeOutDown 1s;
+}
+.home-image.ng-enter {
+}
 .main-image {
   width: 50%;
   height: 50%;
@@ -196,10 +238,10 @@ body > div.container-fluid > ng-view > div > div > div.images.ng-scope > div > d
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  /*border: solid black 10px;*/
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  border: solid black 0px;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
 }
 
 .icon:hover {
@@ -207,15 +249,9 @@ body > div.container-fluid > ng-view > div > div > div.images.ng-scope > div > d
   border: solid black 10px;
 }
 
-img {
-  /*margin: 0 auto;*/
-  /*display: block;*/
-  /*height: 400px;*/
-  /*width: 100%;*/
-}
 .home-btn {
   color: black;
-  background-color: #DED7A9;
+  background-color: #B9AA64;
   border: 0;
 }
 .home-btn:hover {
@@ -231,6 +267,53 @@ img {
   /*width: 33%;*/
   margin: 0;
 }
+.events-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.5);
+}
+.events-modal-image {
+  max-height: 75%;
+  max-width: 75%;
+  margin-top: 2.5%;
+  position: relative;
+  border: solid white 30px;
+  border-radius: 10px;
+}
+.evemts-modal-button-container {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.events-modal-button {
+  border: none;
+  border-radius: 5px;
+  /*padding: 20px;*/
+  background-color: red;
+  z-index: 1000;
+}
+
+.events-modal-button:hover {
+  transition: all .3s;
+  text-align: center;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px white;
+}
+.events-modal-button > h1 {
+
+  font-family: Copperplate;
+  color: black;
+  margin: 0;
+}
+.events-modal-button > h1:hover {
+  transition: all .3s;
+  color: red
+}
 body > div:nth-child(5) > ng-view > div > div > div > h1 {
   color: black;
 }
@@ -239,7 +322,7 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
   /*letter-spacing: -4px;*/
   font-size: 900%;
   text-shadow: -1px -1px 0 #000, 2px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
-  color: #DED7A9;
+  color: #B9AA64;
   text-align: center;
 }
 
@@ -258,7 +341,7 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
   /*left: 25%;*/
   font-size: 900%;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, -1px 4px 0 #000;
-  color: #DED7A9;
+  color: #B9AA64;
   text-align: center;
   /*margin-bottom: -30px;*/
   font-family: vivaldi;
@@ -267,7 +350,7 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
   border: 0px solid #000000;
   font-family: Vivaldi;
   /*font-size: 250px;*/
-  color: #DED7A9;
+  color: #B9AA64;
   margin-bottom: -1.3%;
   /*line-height: 311px;*/
   /*margin-top: 70px;*/
@@ -278,7 +361,7 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
   /*letter-spacing: 15px;*/
   font-size: 900%;
   text-shadow: -1px -1px 0 #000, 5px  3px 0 #000, 5px 3px 0 #000, 1px 1px 0 #000;
-  color: #DED7A9;
+  color: #B9AA64;
   /*margin-top: 100px;*/
   text-align: center;
   margin-bottom: -55px;
@@ -297,7 +380,7 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
 
 .subtitle > a {
   text-decoration: none;
-  color: #DED7A9;
+  color: #B9AA64;
 }
 
 .subtitle > a:hover {
@@ -315,7 +398,7 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
   letter-spacing: .65em;
   text-align: center;
   text-shadow: -1px -1px 0 #000, 2px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
-  color: #DED7A9;
+  color: #B9AA64;
   font-family: Copperplate, fantasy;
 }
 
@@ -324,7 +407,7 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
   padding: 0;
   /*margin-bottom: -24px;*/
   text-align: center;
-  text-shadow: -1px -1px 0 #DED7A9, 2px -1px 0 #DED7A9, -1px 1px 0 #DED7A9, 2px 1px 0 #DED7A9;
+  text-shadow: -1px -1px 0 #B9AA64, 2px -1px 0 #B9AA64, -1px 1px 0 #B9AA64, 2px 1px 0 #B9AA64;
   color: black;
   font-family: 'Pacifico', cursive;
   transition: color 0.7s;
@@ -361,7 +444,7 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
   text-decoration: none;
   width: auto;
   /*height: 33%;*/
-  color: #DED7A9;
+  color: #B9AA64;
   margin: 0 auto;
   font-size: 2.5em;
   text-shadow: -1px -1px 0 black, 2px -1px 0 black, -1px 1px 0 black, 2px 1px 0 black;
@@ -371,14 +454,14 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
 .navlink:hover {
   text-decoration: none;
   color: black;
-  text-shadow: -1px -1px 0 #DED7A9, 2px -1px 0 #DED7A9, -1px 1px 0 #DED7A9, 2px 1px 0 #DED7A9;
+  text-shadow: -1px -1px 0 #B9AA64, 2px -1px 0 #B9AA64, -1px 1px 0 #B9AA64, 2px 1px 0 #B9AA64;
 }
 
 .navlink:focus {
   /*transition: color 1s;*/
   text-decoration: none !important;
   color: black;
-  text-shadow: -1px -1px 0 #DED7A9, 1px -1px 0 #DED7A9, -1px 1px 0 #DED7A9, 1px 1px 0 #DED7A9;
+  text-shadow: -1px -1px 0 #B9AA64, 1px -1px 0 #B9AA64, -1px 1px 0 #B9AA64, 1px 1px 0 #B9AA64;
 }
 
 .vr {
@@ -432,7 +515,9 @@ ul > * {
   margin: 0;
 }
 .menu-items {
-  border-left: solid rgba(0,0,0,0.5) 2px;
+  border-left: solid #B9AA64 5px;
+  text-shadow: -1px -1px 0 black, 2px -1px 0 black, -1px 1px 0 black, 2px 1px 0 black;
+
 }
 .fa-caret-down {
   margin-bottom: -20px !important;
@@ -441,7 +526,7 @@ ul > * {
 img.slide {
   text-align: center;
   height: auto;
-  width: 75%;
+  width: 80%;
   /*animation: fadeInRight 1s;*/
   border: solid black 2px;
   border-left: solid black 10px;
@@ -459,7 +544,7 @@ img.slide {
 }
 .activeMenu {
   color: black;
-  text-shadow: -1px -1px 0 #DED7A9, 2px -1px 0 #DED7A9, -1px 1px 0 #DED7A9, 2px 1px 0 #DED7A9;
+  text-shadow: -1px -1px 0 #B9AA64, 2px -1px 0 #B9AA64, -1px 1px 0 #B9AA64, 2px 1px 0 #B9AA64;
   /*color: white;*/
 }
 
@@ -469,58 +554,14 @@ img.slide {
 .media-q-show {
   display: none;
 }
-@media (max-width: 700px) {
-  *,
-  .header,
-  .special-header,
-  .navigator {
-    font-family: copperplate;
-  }
-  body {
-    background-image: url("http://res.cloudinary.com/spolicar/image/upload/e_brightness:-20/a_0/v1455134890/misc/WebSite_110_zxypdm.jpg");
-    background-size: 100% 100%;
-    background-position: top;
 
-  }
-  .main-subtext {
-    letter-spacing: 0;
-  }
-  .navlink {
-    color: black;
-    text-shadow: -1px -1px 0 #DED7A9, 1px -1px 0 #DED7A9, -1px 1px 0 #DED7A9, 1px 1px 0 #DED7A9;
-  }
-  .activeMenu {
-    color: #DED7A9;
-    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-  }
-  .bakery-image {
-    width: 70%;
-  }
-  .nav-bar {}
-  .navlink {
-    font-size: 25px;
-  }
-  .well {
-    width: 100%;
-  }
-  .title,
-  .main-title,
-  .main-subtitle {
-    font-size: 300%;
-  }
+@media (max-width: 999px) {
   .media-q-hider {
     display: none;
   }
-  .media-q-show {
-    display: inline;
+  .browser-title {
+    width: 60%;
   }
-  .vr {
-    margin-top: 7px;
-    font-size: 100%;
-  }
-}
-
-@media (max-width: 999px) {
   .menu {
     width: 100% !important;
   }
@@ -551,5 +592,62 @@ img.slide {
   }
   .home {
     text-align: center;
+  }
+  .media-q-hider {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .col-xs-3 > h1 {
+    font-family: copperplate;
+  font-size: 1.4em;
+  }
+  .browser-title {
+    width: 100%;
+  }
+  *,
+  .header,
+  .special-header,
+  .navigator {
+    font-family: copperplate;
+  }
+  body {
+    background-image: url("http://res.cloudinary.com/spolicar/image/upload/e_brightness:-20/a_0/v1455134890/misc/WebSite_110_zxypdm.jpg");
+    background-size: 100% 100%;
+    background-position: top;
+
+  }
+  .main-subtext {
+    letter-spacing: 0;
+  }
+  .navlink {
+    color: black;
+    text-shadow: -1px -1px 0 #B9AA64, 1px -1px 0 #B9AA64, -1px 1px 0 #B9AA64, 1px 1px 0 #B9AA64;
+  }
+  .activeMenu {
+    color: #B9AA64;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  }
+  .bakery-image {
+    width: 70%;
+  }
+  /*.nav-bar {}*/
+  .navlink {
+    font-size: 25px;
+  }
+  .well {
+    width: 100%;
+  }
+  .title,
+  .main-title,
+  .main-subtitle {
+    font-size: 300%;
+  }
+  .media-q-show {
+    display: inline;
+  }
+  .vr {
+    margin-top: 7px;
+    font-size: 100%;
   }
 }

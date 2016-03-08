@@ -34,45 +34,50 @@
   <div ng-if="whichEvent==='gallery'" class="row event-content">
     <div class="col-md-12 text-center">
 
+      <div ng-if="eventFocus != null" class="events-modal">
+        <img class="events-modal-image" ng-src="{{eventFocus}}"><br><br>
+        <div class="evemts-modal-button-container"><button class="events-modal-button" ng-click="close()"><h1>Close <i>X</i></h1></button></div>
+      </div>
+
       <figure>
         <figcaption class="subtitle">Farmer's Markets<br> (Carnation, Sammamish, Duvall, Maple Valley)</figcaption>
-        <img class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xaf1/t31.0-8/10668924_1454025258225000_3104468846410782562_o.jpg">
-        <!-- <img class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xla1/v/t1.0-9/11895941_1487800214847504_8627610522851283235_n.jpg?oh=1339a34678b571778fc42120b5dbe19a&oe=576B745C"> -->
+        <img data-id='1' ng-click="modal($event);" class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xaf1/t31.0-8/10668924_1454025258225000_3104468846410782562_o.jpg">
+        <!-- <img ng-click="modal($event);" class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xla1/v/t1.0-9/11895941_1487800214847504_8627610522851283235_n.jpg?oh=1339a34678b571778fc42120b5dbe19a&oe=576B745C"> -->
       </figure>
 
       <figure>
         <figcaption class="subtitle">North Bend Jazz Walk 2015<br> (Pictured: Aria Prame Trio)</figcaption>
-        <img class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xtf1/t31.0-8/11038144_1427113704249489_9083307505200229646_o.jpg">
+        <img data-id='2' ng-click="modal($event);" class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xtf1/t31.0-8/11038144_1427113704249489_9083307505200229646_o.jpg">
       </figure>
 
       <figure>
         <figcaption class="subtitle">Twin Peaks Festival 2015</figcaption>
-        <img class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/11903946_1487800301514162_4311942890543230177_n.jpg?oh=c6eb29138008bc41921635529163f66b&oe=575DA178">
+        <img data-id='3' ng-click="modal($event);" class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/11903946_1487800301514162_4311942890543230177_n.jpg?oh=c6eb29138008bc41921635529163f66b&oe=575DA178">
       </figure>
 
       <figure>
         <figcaption class="subtitle">North Bend Blues Walk 2015</figcaption>
-        <img class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xat1/t31.0-8/12022331_1498877800406412_1694463907173210989_o.jpg">
+        <img data-id='4' ng-click="modal($event);" class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xat1/t31.0-8/12022331_1498877800406412_1694463907173210989_o.jpg">
       </figure>
 
       <figure>
         <figcaption class="subtitle">North Bend Car Show 2015</figcaption>
-        <img class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpf1/v/t1.0-9/11866500_1487799934847532_5580035552314168549_n.jpg?oh=6476e5603d28e8e854efdf29832e91c2&oe=574FCF3D">
+        <img data-id='5' ng-click="modal($event);" class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpf1/v/t1.0-9/11866500_1487799934847532_5580035552314168549_n.jpg?oh=6476e5603d28e8e854efdf29832e91c2&oe=574FCF3D">
       </figure>
 
       <figure>
         <figcaption class="subtitle">Another busy day at the Bakery!</figcaption>
-        <img class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xlt1/v/t1.0-9/11880606_1487803714847154_529557334239287654_n.jpg?oh=add39946caa4e0c934b5e506895c705e&oe=57684C6B">
+        <img data-id='6' ng-click="modal($event);" class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xlt1/v/t1.0-9/11880606_1487803714847154_529557334239287654_n.jpg?oh=add39946caa4e0c934b5e506895c705e&oe=57684C6B">
       </figure>
 
       <figure>
         <figcaption class="subtitle">Behind the Scenes!</figcaption>
-        <img class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xtf1/t31.0-8/12646711_1526136177680574_2769281849119587799_o.jpg">
+        <img data-id='7' ng-click="modal($event);" class="gallery-image" src="https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xtf1/t31.0-8/12646711_1526136177680574_2769281849119587799_o.jpg">
       </figure>
 
       <figure>
         <figcaption class="subtitle">Once upon a time in 1928</figcaption>
-        <img class="gallery-image" src="http://res.cloudinary.com/spolicar/image/upload/v1456792705/misc/BellingerBakery.jpg">
+        <img data-id='8' ng-click="modal($event);" class="gallery-image" src="http://res.cloudinary.com/spolicar/image/upload/v1456792705/misc/BellingerBakery.jpg">
       </figure>
 
 

@@ -5,63 +5,62 @@
     <!-- <h3 class="media-q-hider">Explore our <span ng-if="whichMenu==='Menu'">full</span> {{ whichMenu.toLowerCase(); }}!</h3> -->
   <!-- </div> -->
     <!-- Menu Select -->
-    <div class="col-sm-3">
-      <h1 ng-class="{'menu-subtitle-active': whichMenu==='Sweets'}" ng-click="whichMenu='Sweets'; loadImages(defaultSlide)" class="menu-subtitle">Sweets<br><i class="fa fa-caret-down"></i></h1>
+    <div class="col-xs-3">
+      <h1 ng-class="{'menu-subtitle-active': whichMenu==='Sweets'}" ng-click="whichMenu='Sweets'; loadImages(sweets)" class="menu-subtitle">Sweets<br><i class="fa fa-caret-down"></i></h1>
     </div>
-    <div  class="col-sm-3">
-      <h1 ng-class="{'menu-subtitle-active': whichMenu==='Savories'}" ng-click="whichMenu='Savories'; loadImages(defaultSlide)" class="menu-subtitle">Savories<br><i class="fa fa-caret-down"></i></h1>
+    <div  class="col-xs-3">
+      <h1 ng-class="{'menu-subtitle-active': whichMenu==='Savories'}" ng-click="whichMenu='Savories'; loadImages(savory)" class="menu-subtitle">Savories<br><i class="fa fa-caret-down"></i></h1>
     </div>
-    <div  class="col-sm-3">
-      <h1 ng-class="{'menu-subtitle-active': whichMenu==='Breads'}" ng-click="whichMenu='Breads'; loadImages(defaultSlide)" class="menu-subtitle">Breads<br><i class="fa fa-caret-down"></i></h1>
+    <div  class="col-xs-3">
+      <h1 ng-class="{'menu-subtitle-active': whichMenu==='Breads'}" ng-click="whichMenu='Breads'; loadImages(bread)" class="menu-subtitle">Breads<br><i class="fa fa-caret-down"></i></h1>
     </div>
-    <div class="col-sm-3">
-      <h1 ng-class="{'menu-subtitle-active': whichMenu==='Drinks'}" ng-click="whichMenu='Drinks'; loadImages(defaultSlide)" class="menu-subtitle">Drinks<br><i class="fa fa-caret-down"></i></h1>
+    <div class="col-xs-3">
+      <h1 ng-class="{'menu-subtitle-active': whichMenu==='Drinks'}" ng-click="whichMenu='Drinks'; loadImages(drinks)" class="menu-subtitle">Drinks<br><i class="fa fa-caret-down"></i></h1>
     </div>
-
+</div>
+<div class="row">
     <br class="media-q-hider">
     <br class="media-q-hider">
-    <br class="media-q-hider">
-    <br class="media-q-hider">
-    <br class="media-q-hider">
-    <!-- Menu Selected - which menu -->
-    <div ng-if="whichMenu==='Menu' || whichMenu==='Sweets'" id="menu-page" class="sweets col-sm-2">
+<div class="col-md-1"></div>
+    <div ng-if="whichMenu==='Menu' || whichMenu==='Sweets'" id="menu-page" class="sweets col-md-2">
         <ul>
-          <h1><a ng-click="loadImages(doughnuts)"><i class="fa fa-caret-right"></i>&nbsp;Doughnuts</a></h1><br>
-          <h1><a ng-click="loadImages(pastries)"><i class="fa fa-caret-right"></i>&nbsp;Pastries</a></h1><br>
-          <h1><a ng-click="loadImages(pies)"><i class="fa fa-caret-right"></i>&nbsp;Pies</a></h1><br>
-          <h1><a ng-click="loadImages(cookies)"><i class="fa fa-caret-right"></i>&nbsp;Cookies</a></h1><br>
+          <h1><a ng-click="loadImages(doughnuts)"><i class="media-q-hider">-&nbsp;</i>Doughnuts</a></h1><br>
+          <h1><a ng-click="loadImages(pastries)"><i class="media-q-hider">-&nbsp;</i>Pastries</a></h1><br>
+          <h1><a ng-click="loadImages(pies)"><i class="media-q-hider">-&nbsp;</i>Pies</a></h1><br>
+          <h1><a ng-click="loadImages(cookies)"><i class="media-q-hider">-&nbsp;</i>Cookies</a></h1><br>
+          <h1><a ng-click="loadImages(cakes)"><i class="media-q-hider">-&nbsp;</i>Cakes</a></h1><br>
+          <h1><a ng-click="loadImages(seasonal)"><i class="media-q-hider">-&nbsp;</i>Seasonal</a></h1><br>
+
         </ul>
     </div>
 
-    <div class="savories col-sm-2" ng-if="whichMenu==='Savories'">
+    <div class="savories col-md-2" ng-if="whichMenu==='Savories'">
         <ul>
-          <h1><a ng-click="loadImages(quiche)"><i class="fa fa-caret-right"></i>&nbsp;Quiche</a></h1><br>
-          <h1><a ng-click="loadImages(salad)"><i class="fa fa-caret-right"></i>&nbsp;Soup, Salad &amp; more</a></h1><br>
-          <h1><a ng-click="loadImages(sandwiches)"><i class="fa fa-caret-right"></i>&nbsp;Sandwiches</a></h1><br>
-          <h1><a ng-click="loadImages(savories)"><i class="fa fa-caret-right"></i>&nbsp;Calzones &amp; more</a></h1><br>
-          <!-- <h1><a><i class="fa fa-caret-right"></i>&nbsp;Breakfast Casserole</a></h1><br> -->
+          <h1><a ng-click="loadImages(quiche)"><i class="media-q-hider">-&nbsp;</i>Quiche</a></h1><br>
+          <h1><a ng-click="loadImages(salad)"><i class="media-q-hider">-&nbsp;</i>Soup, Salad &amp; more</a></h1><br>
+          <h1><a ng-click="loadImages(sandwiches)"><i class="media-q-hider">-&nbsp;</i>Sandwiches</a></h1><br>
+          <h1><a ng-click="loadImages(savories)"><i class="media-q-hider">-&nbsp;</i>Calzones &amp; more</a></h1><br>
+          <!-- <h1><a><i class="media-q-hider">-&nbsp;</i>Breakfast Casserole</a></h1><br> -->
         </ul>
     </div>
 
-    <div class="breads col-sm-2" ng-if="whichMenu==='Breads'">
+    <div class="breads col-md-2" ng-if="whichMenu==='Breads'">
         <ul>
-          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Apple Cinnamon Bread</a></h1><br>
-          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Banana Bread</a></h1><br>
-          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Zucchini Bread</a></h1><br>
-          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Pumpkin Bread</a></h1><br>
-          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Rolls</a></h1><br>
+          <h1><a ng-click="loadImages(breads)"><i class="media-q-hider">-&nbsp;</i>Breads</a></h1><br>
+          <h1><a ng-click="loadImages(cakes)"><i class="media-q-hider">-&nbsp;</i>Rolls</a></h1><br>
+          <h1><a ng-click="loadImages(cakes)"><i class="media-q-hider">-&nbsp;</i>Bagels</a></h1><br>
         </ul>
     </div>
 
-    <div class="drinks col-sm-2" ng-if="whichMenu==='Drinks'">
+    <div class="drinks col-md-2" ng-if="whichMenu==='Drinks'">
         <ul>
-          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Espresso</a></h1><br>
-          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Hot Chocolate</a></h1><br>
-          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Tea</a></h1><br>
-          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Orange Juice / Apple Juice / Milk / Chocolate milk</a></h1><br>
-          <h1><a><i class="fa fa-caret-right"></i>&nbsp;San Pellegrino</a></h1><br>
-          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Izzy</a></h1><br>
-          <h1><a><i class="fa fa-caret-right"></i>&nbsp;Coke and Pepsi products</a></h1><br>
+          <h1><i class="media-q-hider">-&nbsp;</i>Espresso</h1><br>
+          <h1><i class="media-q-hider">-&nbsp;</i>Hot Chocolate</h1><br>
+          <h1><i class="media-q-hider">-&nbsp;</i>Tea</h1><br>
+          <h1><i class="media-q-hider">-&nbsp;</i>Orange Juice / Apple Juice / Milk / Chocolate milk</h1><br>
+          <h1><i class="media-q-hider">-&nbsp;</i>San Pellegrino</h1><br>
+          <h1><i class="media-q-hider">-&nbsp;</i>Izzy</h1><br>
+          <h1><i class="media-q-hider">-&nbsp;</i>Coke and Pepsi products</h1><br>
         </ul>
     </div>
 
