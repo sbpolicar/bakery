@@ -4,22 +4,22 @@ BakeryApp.run([function(){
 }]);
 
 BakeryApp.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider) {
-    $locationProvider.html5Mode(false);
+    $locationProvider.html5Mode(true);
     $routeProvider
     .when('/',{
-      templateUrl: 'bakery/views/home.html'
+      templateUrl: 'views/home.html'
     })
     .when('/menu',{
-      templateUrl: 'bakery/views/menu.html'
+      templateUrl: 'views/menu.html'
     })
     .when('/about',{
-      templateUrl: 'bakery/views/about.html'
+      templateUrl: 'views/about.html'
     })
     .when('/events',{
-      templateUrl: 'bakery/views/events.html'
+      templateUrl: 'views/events.html'
     })
     .otherwise({
-      templateUrl:'bakery/views/404.html'
+      templateUrl:'views/404.html'
     });
 }]);
 
