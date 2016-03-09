@@ -118,15 +118,6 @@ var resource ={
 
       },
       {
-         public_id:"quiche/Quiche",
-         format:"jpg",
-         width:4000,
-         height:3000,
-         name:"Quiche",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554982/savories/Quiche.jpg",
-
-      },
-      {
          public_id:"quiche/QuichePepperJackHam",
          format:"jpg",
          width:4000,
