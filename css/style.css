@@ -46,8 +46,9 @@ a {
   text-shadow: -1px -1px 0 black, 2px -1px 0 black, -1px 1px 0 black, 2px 1px 0 black;
 
 }
-ng-view {
+.home-content {
   margin-bottom: 20px;
+  border-bottom: solid red 5px;
 }
 body > div.container-fluid > ng-view > div > div.col-md-5.text-center > a {
   text-shadow: none;
