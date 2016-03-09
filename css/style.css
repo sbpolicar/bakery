@@ -47,7 +47,7 @@ a {
 
 }
 .home-content {
-  margin-bottom: 200px;
+  margin-bottom: 125px;
   border-bottom: solid red 5px;
 }
 body > div.container-fluid > ng-view > div > div.col-md-5.text-center > a {
