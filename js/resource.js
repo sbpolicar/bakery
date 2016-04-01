@@ -6,7 +6,7 @@ var resource ={
          width:640,
          height:480,
          name:"Valentines",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456555053/seasonal/Valentines2.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456555053/seasonal/Valentines2.jpg",
 
       },
       {
@@ -15,7 +15,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Football",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456555053/seasonal/Football.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456555053/seasonal/Football.jpg",
 
       },
       {
@@ -24,7 +24,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Baseball",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456555050/seasonal/BaseballCookie.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456555050/seasonal/BaseballCookie.jpg",
 
       },
       {
@@ -33,7 +33,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Twelve's Cookie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456555050/seasonal/Football12.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456555050/seasonal/Football12.jpg",
 
       },
       {
@@ -42,7 +42,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Halloween",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456555049/seasonal/Halloween.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456555049/seasonal/Halloween.jpg",
 
       },
       {
@@ -51,7 +51,7 @@ var resource ={
          width:1186,
          height:1729,
          name:"Ghost Pound Cake",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456555038/seasonal/GhostPoundCake.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456555038/seasonal/GhostPoundCake.jpg",
 
       },
       {
@@ -60,7 +60,7 @@ var resource ={
          width:640,
          height:480,
          name:"King Cake",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456555036/seasonal/KingCake.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456555036/seasonal/KingCake.jpg",
 
       },
       {
@@ -69,7 +69,7 @@ var resource ={
          width:1817,
          height:1009,
          name:"Halloween 2",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456555036/seasonal/Halloween2.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456555036/seasonal/Halloween2.jpg",
 
       },
       {
@@ -78,7 +78,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Apple Cinnamon Bread",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554998/bread/AppleCinBread.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554998/bread/AppleCinBread.jpg",
 
       },
       {
@@ -87,7 +87,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Bacon & Cheddar Quiche",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554992/savories/QuicheBaconCheddar.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554992/savories/QuicheBaconCheddar.jpg",
 
       },
       {
@@ -96,7 +96,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Spanakopeta",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1457476992/savories/Spanakopita.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1457476992/savories/Spanakopita.jpg",
 
       },
       {
@@ -105,7 +105,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Lentil Soup",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554990/savories/SoupLentil.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554990/savories/SoupLentil.jpg",
 
       },
       {
@@ -114,7 +114,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Sandwich",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554990/savories/Sandwich.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554990/savories/Sandwich.jpg",
 
       },
       {
@@ -123,7 +123,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Pepper Jack & Ham Quiche",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554979/savories/QuichePepperJackHam.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554979/savories/QuichePepperJackHam.jpg",
 
       },
       {
@@ -132,7 +132,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Philly Pocket",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554975/savories/PocketPhilly.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554975/savories/PocketPhilly.jpg",
 
       },
       {
@@ -141,7 +141,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Spinach & Feta Quiche",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554975/savories/QuicheSpinachFeta.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554975/savories/QuicheSpinachFeta.jpg",
 
       },
       {
@@ -150,7 +150,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Chicken Caesar Pocket",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554972/savories/PocketChickenCaesar.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554972/savories/PocketChickenCaesar.jpg",
 
       },
       {
@@ -159,7 +159,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Greek Salad",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554962/savories/GreekSalad2.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554962/savories/GreekSalad2.jpg",
 
       },
       {
@@ -168,7 +168,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Pizza Bagel",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554957/savories/PizzaBagel.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554957/savories/PizzaBagel.jpg",
 
       },
       {
@@ -177,7 +177,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Meatball Calzone",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554956/savories/MetaballCalzone.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554956/savories/MetaballCalzone.jpg",
 
       },
       {
@@ -186,7 +186,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Turkey & Swiss Croissant",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554947/savories/CroissantTurkeySwiss.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554947/savories/CroissantTurkeySwiss.jpg",
 
       },
       {
@@ -195,7 +195,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Ham & Cheese Croissant",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554941/savories/CroisantHamCheese.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554941/savories/CroisantHamCheese.jpg",
 
       },
       {
@@ -204,7 +204,7 @@ var resource ={
          width:3000,
          height:4000,
          name:"Granola",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1457474679/savories/Granola.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1457474679/savories/Granola.jpg",
 
       },
       {
@@ -213,7 +213,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Fruit Salad",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554939/savories/FruitSalad.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554939/savories/FruitSalad.jpg",
 
       },
       {
@@ -222,7 +222,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Croissant Sandwich",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554934/savories/CroissantSandwich.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554934/savories/CroissantSandwich.jpg",
 
       },
       {
@@ -231,7 +231,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Strawberry Pie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554861/pies/StrawberryPie.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554861/pies/StrawberryPie.jpg",
 
       },
       {
@@ -240,7 +240,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Bran Muffins",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554829/pastries/BranMuffins.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554829/pastries/BranMuffins.jpg",
 
       },
       {
@@ -249,7 +249,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Mazurka",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1457474299/pastries/Mazurka.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1457474299/pastries/Mazurka.jpg",
 
       },
       {
@@ -258,7 +258,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Date Bar",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1457474497/pastries/DateBar.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1457474497/pastries/DateBar.jpg",
 
       },
       {
@@ -267,7 +267,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Baklava",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1457474507/pastries/Baklava.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1457474507/pastries/Baklava.jpg",
 
       },
       {
@@ -276,7 +276,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Apple Bread Pudding",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554827/pastries/AppleBreadPudding2.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554827/pastries/AppleBreadPudding2.jpg",
 
       },
       {
@@ -285,7 +285,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"OO cookie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554755/cookies/OOs.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554755/cookies/OOs.jpg",
 
       },
       {
@@ -294,7 +294,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Coconut Macaroon",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554755/cookies/CoconutMac.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554755/cookies/CoconutMac.jpg",
 
       },
       {
@@ -303,7 +303,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Ginger Bread Man",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554754/cookies/GingerBreadMan.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554754/cookies/GingerBreadMan.jpg",
 
       },
       {
@@ -312,7 +312,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Bleeding Macaroon",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554751/cookies/BleedingMac.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554751/cookies/BleedingMac.jpg",
 
       },
       {
@@ -321,7 +321,7 @@ var resource ={
          width:3000,
          height:4000,
          name:"Oatmeal Raisin",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456554752/cookies/OatmealRaisin2.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456554752/cookies/OatmealRaisin2.jpg",
 
       },
       {
@@ -330,7 +330,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Koulourakia",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1457307824/cookies/Koulourakia.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1457307824/cookies/Koulourakia.jpg",
 
       },
       {
@@ -339,7 +339,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Sprinkled Ring Doughnut",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456522787/doughnuts/RingSprinkled.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456522787/doughnuts/RingSprinkled.jpg",
 
       },
       {
@@ -348,7 +348,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Raspberry Doughnut",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456522787/doughnuts/Raspberry.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456522787/doughnuts/Raspberry.jpg",
 
       },
       {
@@ -357,7 +357,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Maple Bars",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456522784/doughnuts/MapleBars.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456522784/doughnuts/MapleBars.jpg",
 
       },
       {
@@ -366,7 +366,7 @@ var resource ={
          width:3264,
          height:2448,
          name:"Custom Doughnuts",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456522781/doughnuts/DoughnutSizes.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456522781/doughnuts/DoughnutSizes.jpg",
 
       },
       {
@@ -375,7 +375,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Dough Kabobs",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456522781/doughnuts/DoughKaBobs.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456522781/doughnuts/DoughKaBobs.jpg",
 
       },
       {
@@ -384,7 +384,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Doughnut Holes",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456522777/doughnuts/DoughnutHoles.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456522777/doughnuts/DoughnutHoles.jpg",
 
       },
       {
@@ -393,7 +393,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Caramel Nut Roll",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456522776/doughnuts/CaramelNutRoll.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456522776/doughnuts/CaramelNutRoll.jpg",
 
       },
       {
@@ -402,7 +402,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Cronut",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1457473380/doughnuts/Cronut.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1457473380/doughnuts/Cronut.jpg",
 
       },
       {
@@ -411,7 +411,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Creme Filled Doughnut",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456522761/doughnuts/CremeFilled.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456522761/doughnuts/CremeFilled.jpg",
 
       },
       {
@@ -420,7 +420,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Apple Fritter",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456522759/doughnuts/AppleFritter.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456522759/doughnuts/AppleFritter.jpg",
 
       },
       {
@@ -429,7 +429,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Angel Cream Doughnut",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456522758/doughnuts/AngelCream.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456522758/doughnuts/AngelCream.jpg",
 
       },
       {
@@ -438,7 +438,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Cinnamon Rolls",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456522756/doughnuts/CinRolls.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456522756/doughnuts/CinRolls.jpg",
 
       },
       {
@@ -447,7 +447,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Chocolate Bars",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456522755/doughnuts/ChocolateBars.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456522755/doughnuts/ChocolateBars.jpg",
 
       },
       {
@@ -456,7 +456,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Bacon Maple Pershing",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456522749/doughnuts/BaconMaplePershing.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456522749/doughnuts/BaconMaplePershing.jpg",
 
       },
       {
@@ -464,7 +464,7 @@ var resource ={
          format:"jpg",
          width:4000,
          height:3000,
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1456167471/misc/WebSite_115.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1456167471/misc/WebSite_115.jpg",
 
       },
       {
@@ -472,7 +472,7 @@ var resource ={
          format:"jpg",
          width:640,
          height:480,
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1455913710/misc/aboutpage.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1455913710/misc/aboutpage.jpg",
 
       },
       {
@@ -480,7 +480,7 @@ var resource ={
          format:"jpg",
          width:3000,
          height:4000,
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454560820/misc/WebSite_110_zxypdm.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454560820/misc/WebSite_110_zxypdm.jpg",
 
       },
       {
@@ -488,7 +488,7 @@ var resource ={
          format:"jpg",
          width:4000,
          height:3000,
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454560664/misc/WebSite_114_edaliw.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454560664/misc/WebSite_114_edaliw.jpg",
 
       },
       {
@@ -496,7 +496,7 @@ var resource ={
          format:"jpg",
          width:864,
          height:576,
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454560588/sample.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454560588/sample.jpg",
 
       },
       {
@@ -505,7 +505,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Cannoli",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557274/pastries/Cannoli_nkthiq.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557274/pastries/Cannoli_nkthiq.jpg",
 
       },
       {
@@ -514,7 +514,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Almond Twist",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557273/pastries/AlmondTwist_s4oiiw.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557273/pastries/AlmondTwist_s4oiiw.jpg",
 
       },
       {
@@ -523,7 +523,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"King Doughnut",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557249/doughnuts/KingDoughnut_lvbzzz.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557249/doughnuts/KingDoughnut_lvbzzz.jpg",
 
       },
       {
@@ -532,7 +532,7 @@ var resource ={
          width:3000,
          height:4000,
          name:"Triple Chocolate Cookie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557221/cookies/TripleChocolate_tr6qty.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557221/cookies/TripleChocolate_tr6qty.jpg",
 
       },
       {
@@ -541,7 +541,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Raspberry Cobbler",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557215/cookies/RaspCobbler_tvp5sd.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557215/cookies/RaspCobbler_tvp5sd.jpg",
 
       },
       {
@@ -550,7 +550,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Pecan Macaroon",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557215/cookies/PecanMacaroon_gkptqd.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557215/cookies/PecanMacaroon_gkptqd.jpg",
 
       },
       {
@@ -559,7 +559,7 @@ var resource ={
          width:3000,
          height:4000,
          name:"Sandy Foot Cookie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557215/cookies/SandyFoot_pce58h.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557215/cookies/SandyFoot_pce58h.jpg",
 
       },
       {
@@ -568,7 +568,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Rum Ball",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557214/cookies/RumBall_pmnixq.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557214/cookies/RumBall_pmnixq.jpg",
 
       },
       {
@@ -577,7 +577,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Thumbprint Cookie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557214/cookies/Thumbprint_wzmur3.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557214/cookies/Thumbprint_wzmur3.jpg",
 
       },
       {
@@ -586,7 +586,7 @@ var resource ={
          width:3000,
          height:4000,
          name:"Peanut Butter Cookie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557205/cookies/PeanutButter_hx1apq.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557205/cookies/PeanutButter_hx1apq.jpg",
 
       },
       {
@@ -595,7 +595,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Russian Tea Cookie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557202/cookies/RussianTea_lziywt.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557202/cookies/RussianTea_lziywt.jpg",
 
       },
       {
@@ -604,7 +604,7 @@ var resource ={
          width:3000,
          height:4000,
          name:"Oatmeal Raisin Cookie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557196/cookies/OatmealRasin_wvfupx.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557196/cookies/OatmealRasin_wvfupx.jpg",
 
       },
       {
@@ -613,7 +613,7 @@ var resource ={
          width:3000,
          height:4000,
          name:"Heart Cookie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557190/cookies/Heart_wns8pg.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557190/cookies/Heart_wns8pg.jpg",
 
       },
       {
@@ -622,7 +622,7 @@ var resource ={
          width:3000,
          height:4000,
          name:"Iced Heart Cookie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557187/cookies/HeartIced_lvdbgc.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557187/cookies/HeartIced_lvdbgc.jpg",
 
       },
       {
@@ -631,7 +631,7 @@ var resource ={
          width:3000,
          height:4000,
          name:"Bleeding Heart Cookie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557180/cookies/BleedingHeart_gnq1uf.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557180/cookies/BleedingHeart_gnq1uf.jpg",
 
       },
       {
@@ -640,7 +640,7 @@ var resource ={
          width:3000,
          height:4000,
          name:"MM Cookie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557179/cookies/MM_yclpd9.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557179/cookies/MM_yclpd9.jpg",
 
       },
       {
@@ -649,7 +649,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Butternut Cookie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557174/cookies/Butternut_pmmza0.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557174/cookies/Butternut_pmmza0.jpg",
 
       },
       {
@@ -658,7 +658,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Pecan Pie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557126/pies/PecanPie_wvxbun.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557126/pies/PecanPie_wvxbun.jpg",
 
       },
       {
@@ -667,7 +667,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Chocolate Pie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557123/pies/Chocolate_wwoi5g.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557123/pies/Chocolate_wwoi5g.jpg",
 
       },
       {
@@ -676,7 +676,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Apple Pie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557118/pies/ApplePie2_axjy7j.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557118/pies/ApplePie2_axjy7j.jpg",
 
       },
       {
@@ -685,7 +685,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Cherry Pie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557116/pies/Cherry_h1l6ql.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557116/pies/Cherry_h1l6ql.jpg",
 
       },
       {
@@ -694,7 +694,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Mazariner",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1454557114/pies/Mazariner_qfmuwa.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1454557114/pies/Mazariner_qfmuwa.jpg",
 
       },
       {
@@ -703,7 +703,7 @@ var resource ={
          width:4000,
          height:3000,
          name:"Croissant",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1457477881/bread/Croissant.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1457477881/bread/Croissant.jpg",
       },
       {
          public_id:"bread/PumpkinBread",
@@ -711,7 +711,7 @@ var resource ={
          width:720,
          height:960,
          name: "Pumpkin Bread",
-         url:"http://res.cloudinary.com/spolicar/image/upload/a_auto_right/v1457308565/seasonal/PumpkinBread.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/a_auto_right/v1457308565/seasonal/PumpkinBread.jpg",
       },
       {
          public_id:"seasonal/EasterEgg",
@@ -719,7 +719,7 @@ var resource ={
          width:4000,
          height:3000,
          name: "Easter Egg",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1457308501/seasonal/EasterEgg.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1457308501/seasonal/EasterEgg.jpg",
       },
       {
          public_id:"seasonal/BatCookie",
@@ -727,7 +727,7 @@ var resource ={
          width:4000,
          height:3000,
          name: "Bat Cookie",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1457308495/seasonal/BatCookie.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1457308495/seasonal/BatCookie.jpg",
       },
       {
          public_id:"seasonal/GingerbreadBunny",
@@ -735,7 +735,7 @@ var resource ={
          width:4000,
          height:3000,
          name: "Gingerbread Bunny",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1457308495/seasonal/GingerbreadBunny.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1457308495/seasonal/GingerbreadBunny.jpg",
       },
       {
          public_id:"seasonal/Shamrock",
@@ -743,7 +743,7 @@ var resource ={
          width:4000,
          height:3000,
          name: "Shamrock",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1457308493/seasonal/Shamrock.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1457308493/seasonal/Shamrock.jpg",
       },
       {
          public_id:"seasonal/EasterBunny",
@@ -751,7 +751,7 @@ var resource ={
          width:4000,
          height:3000,
          name: "Easter Bunny",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1457308491/seasonal/EasterBunny.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1457308491/seasonal/EasterBunny.jpg",
       },
       {
          public_id:"seasonal/Snowmen",
@@ -759,7 +759,7 @@ var resource ={
          width:2448,
          height:3264,
          name: "Snowmen",
-         url:"http://res.cloudinary.com/spolicar/image/upload/v1457308484/seasonal/Snowmen.jpg",
+         url:"http://res.cloudinary.com/spolicar/image/upload/q_43/v1457308484/seasonal/Snowmen.jpg",
       },
    ]
 }
