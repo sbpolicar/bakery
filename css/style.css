@@ -208,6 +208,8 @@ a:focus {
   color: white;
   background-color: white;
   border: white;
+  margin: 0;
+  padding: 0;
 }
 .header-container {
   /*border-radius: 5px;*/

@@ -760,6 +760,6 @@ var resource ={
          height:3264,
          name: "Snowmen",
          url:"http://res.cloudinary.com/spolicar/image/upload/v1457308484/seasonal/Snowmen.jpg",
-      }
+      },
    ]
 }
