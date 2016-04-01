@@ -208,7 +208,7 @@ a:focus {
   color: white;
   background-color: white;
   border: white;
-  margin: 0;
+  margin: 5px;
   padding: 0;
 }
 .header-container {
