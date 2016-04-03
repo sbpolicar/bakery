@@ -127,6 +127,7 @@ a:focus {
 }
 
 .fine-print {
+  opacity: 0.5;
   width: 10%;
   position: fixed;
   bottom: 0;
