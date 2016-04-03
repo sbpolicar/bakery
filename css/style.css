@@ -548,9 +548,10 @@ img.slide {
   height: auto;
   width: 80%;
   /*animation: fadeInRight 1s;*/
-  border: solid black 2px;
-  border-left: solid black 10px;
-  border-right: solid black 10px;
+  border: solid black 1px;
+  box-shadow: 5px 5px 100px black;
+  /*border-left: solid black 10px;*/
+  /*border-right: solid black 10px;*/
   border-radius: 10px;
   max-height: 550px;
   /*max-width: 450px;*/
