@@ -428,7 +428,7 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
   color: white;
 }
 .nav-container {
-  border: solid black 1px;
+  /*border: solid black 1px;*/
   margin: 0 auto;
   width: 60%;
   border-radius: 4px;
@@ -437,8 +437,8 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
   /*box-shadow: inset 0 0 100px transparent;*/
 }
 .new-hr{
-  /*color: white;*/
-  border: solid white 5px;
+  color: #B9AA64;
+  /*border: solid white 5px;*/
 }
 .navigator {
   margin: 0 auto;
