@@ -145,6 +145,9 @@ a:focus {
   width: 35%;
   height: 30%;
 }
+.slide-image-wrap > h1.subtitle {
+  margin: 0;
+}
 .home-image-container {
   position: relative;
   margin: 0 auto;
