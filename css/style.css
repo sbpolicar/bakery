@@ -428,7 +428,6 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
   color: white;
 }
 .nav-container {
-  /*border: solid black 1px;*/
   margin: 0 auto;
   width: 60%;
   border-radius: 4px;
@@ -441,7 +440,9 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
   /*border: solid white 5px;*/
 }
 .navigator {
+  /*border: solid black 1px;*/
   margin: 0 auto;
+  margin-top: -40px;
   font-family: 'Pacifico', cursive;
   width: 100%;
   /*float: right;*/
