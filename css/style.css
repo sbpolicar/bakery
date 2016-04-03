@@ -434,15 +434,16 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 0 100px transparent;
-  margin-top: -40px;
 }
 .new-hr{
+  margin: 0;
   background-color: #B9AA64 !important;
   /*border: solid white 5px;*/
 }
 .navigator {
   /*border: solid black 1px;*/
   margin: 0 auto;
+  margin-top: -40px;
   font-family: 'Pacifico', cursive;
   width: 100%;
   /*float: right;*/
