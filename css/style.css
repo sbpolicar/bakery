@@ -71,7 +71,7 @@ a:focus {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.5);
   z-index: -1;
 }
 .col-sm-5,
