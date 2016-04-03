@@ -134,7 +134,7 @@ a:focus {
   left: 0;
   border-top: solid black 1px;
   border-bottom: solid black 1px;
-  background: white;
+  background: gray;
   text-align: center;
 }
 
