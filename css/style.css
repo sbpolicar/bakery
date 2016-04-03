@@ -386,6 +386,7 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
 
 .subtitle {
   /*margin-bottom: -24px;*/
+  z-index: 999;
   text-align: center;
   text-shadow: -1px -1px 0 black, 2px -1px 0 black, -1px 1px 0 black, 2px 1px 0 black;
   color: white;
