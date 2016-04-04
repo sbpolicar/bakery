@@ -573,6 +573,7 @@ img.slide {
   /*border-right: solid black 10px;*/
   border-radius: 10px;
   max-height: 550px;
+  margin-bottom: 2.5%;
   /*max-width: 450px;*/
 }
 .dot {
