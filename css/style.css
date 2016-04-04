@@ -53,7 +53,7 @@ a {
   /*padding-bottom: 115px;*/
   /*border-bottom: solid red 5px;*/
 }
-body > div.container-fluid > ng-view > div > div.col-lg-5.text-center > a {
+.btn {
   text-shadow: none;
 }
 a:hover {
@@ -163,7 +163,7 @@ a:focus {
 }
 .home-image-container {
   width: 100vw;
-  padding-left: 35px;
+  /*padding-left: 35px;*/
   overflow: hidden;
   height: 42em;
   text-align: center;
