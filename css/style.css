@@ -53,7 +53,7 @@ a {
   /*padding-bottom: 115px;*/
   /*border-bottom: solid red 5px;*/
 }
-.btn {
+body > div.container-fluid > ng-view > div > div.col-lg-5.text-center > a {
   text-shadow: none;
 }
 a:hover {
@@ -162,13 +162,12 @@ a:focus {
   margin: 0;
 }
 .home-image-container {
-  width: 100vw;
-  /*padding-left: 35px;*/
+  /*width: 100vw;*/
   overflow: hidden;
   height: 42em;
   /*text-align: center;*/
   /*position: relative;*/
-  /*margin: 0 auto;*/
+  margin: 0 auto;
 }
 .home-info-container {
   margin-top: 2.5%;
@@ -176,18 +175,17 @@ a:focus {
 .home-image {
   height: auto;
   max-height: 600px;
-  width: 50%;
-  /*text-align: center;*/
+  width: 93%;
+  text-align: center;
   animation: slideInRight 1s;
   border: solid black 1px;
   box-shadow: 5px 5px 50px black;
   /*border-left: solid black 10px;*/
   /*border-right: solid black 10px;*/
   border-radius: 10px;
-  /*position: absolute;*/
-  /*left: 50;*/
+  position: absolute;
   margin: 0 auto;
-  /*margin-top: -2.5%;*/
+  margin-top: -2.5%;
   /*width: 93%;*/
   /*height: 400px;*/
 }
@@ -619,8 +617,6 @@ img.slide {
 @media (max-width: 999px) {
   .home-image-container {
   height: 32em;
-  padding-left: 30px;
-
   }
   .media-q-hider {
     display: none;
@@ -666,7 +662,6 @@ img.slide {
 @media (max-width: 700px) {
   .home-image-container {
   height: 22em;
-  padding-left: 20px;
 
   }
   .col-xs-3 > h1 {
