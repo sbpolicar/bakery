@@ -62,7 +62,7 @@ SlideShow.directive('slide', ['$parse', function($parse){
 
 angular.module("template/slideshow.html", []).run(["$templateCache", function($templateCache) {
     $templateCache.put("template/slideshow.html",
-        '<div class="slides-wrap col-md-2"><span ng-transclude></span></div>' +
+        '<div class="slides-wrap col-md-3"><span ng-transclude></span></div>' +
         '<div class="slide-container col-md-6">' +
         '<div class="slide-image-wrap"><h1 class="subtitle">{{currentslide.name}}</h1><img class="slide-image slide" ng-src="{{currentslide.url}}" alt="{{currentslide.name}}" /></div>' +
         '</div>'
