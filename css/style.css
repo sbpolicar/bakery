@@ -166,7 +166,7 @@ a:focus {
   padding-left: 35px;
   overflow: hidden;
   height: 42em;
-  /*text-align: center;*/
+  text-align: center;
   /*position: relative;*/
   margin: 0 auto;
 }
