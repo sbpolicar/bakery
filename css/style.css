@@ -167,7 +167,7 @@ a:focus {
   overflow: hidden;
   height: 42em;
   /*text-align: center;*/
-  position: relative;
+  /*position: relative;*/
   margin: 0 auto;
 }
 .home-info-container {
@@ -177,17 +177,17 @@ a:focus {
   height: auto;
   max-height: 600px;
   width: 50%;
-  text-align: center;
+  /*text-align: center;*/
   animation: slideInRight 1s;
   border: solid black 1px;
   box-shadow: 5px 5px 50px black;
   /*border-left: solid black 10px;*/
   /*border-right: solid black 10px;*/
   border-radius: 10px;
-  position: absolute;
-  left: 50;
+  /*position: absolute;*/
+  /*left: 50;*/
   margin: 0 auto;
-  margin-top: -2.5%;
+  /*margin-top: -2.5%;*/
   /*width: 93%;*/
   /*height: 400px;*/
 }
