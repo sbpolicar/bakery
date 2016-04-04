@@ -454,6 +454,8 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
   width: 60%;
   border-radius: 4px;
   text-align: center;
+  position: fixed;
+
 }
 .new-hr{
   display: none;
@@ -472,7 +474,7 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
 }
 
 .navlink {
-  box-shadow: inset 0 0 100px black;
+  box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
   background-color: rgba(0, 0, 0, 0.15);
   /*border-bottom: solid #B9AA64 1px;*/
   border-right: solid #B9AA64 .5px;
