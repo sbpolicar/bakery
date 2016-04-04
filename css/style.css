@@ -617,7 +617,10 @@ img.slide {
 @media (max-width: 999px) {
   .home-image-container {
   height: 32em;
+  }
+  .home-image {
   margin-right:40px;
+
   }
   .media-q-hider {
     display: none;
