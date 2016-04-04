@@ -129,8 +129,10 @@ a:focus {
 }
 .navlink:nth-child(1){
   border-left: none;
+  border-radius: 0 0 0 10px;
 }
   .navlink:nth-child(4) {
+  border-radius: 0 0 0 10px;
   border-right: none;
 }
 .fine-print {
