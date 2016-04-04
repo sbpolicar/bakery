@@ -190,9 +190,9 @@ a:focus {
 }
 .about-image {
   width: 100%;
-  border: solid black 2px;
-  border-left: solid black 10px;
-  border-right: solid black 10px;
+  border: solid black 1px;
+  /*border-left: solid black 10px;*/
+  /*border-right: solid black 10px;*/
   border-radius: 10px;
 }
 .about-text {
@@ -295,8 +295,9 @@ body > div.container-fluid > ng-view > div > div > div.images.ng-scope > div > d
   max-width: 75%;
   margin-top: 2.5%;
   position: relative;
-  border: solid white 30px;
+  /*border: solid white 30px;*/
   border-radius: 10px;
+  box-shadow: 5px 5px 50px black;
 }
 .evemts-modal-button-container {
   width: 100%;
