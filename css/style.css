@@ -269,7 +269,7 @@ body > div.container-fluid > ng-view > div > div > div.images.ng-scope > div > d
   /*border: solid black 5px;*/
   width: 80px;
   /*border-radius: 0;*/
-  box-shadow: 0 0 50px black;
+  box-shadow: 0 0 50px rgba(255,255,255,0.5);
 }
 
 .home-btn {
