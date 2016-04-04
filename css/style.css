@@ -664,7 +664,7 @@ img.slide {
 }
 @media (max-width: 700px) {
   .home-image-container {
-  height: 22em;
+  height: 32em;
   padding-left: 20px;
 
   }
