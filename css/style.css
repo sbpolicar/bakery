@@ -219,6 +219,7 @@ a:focus {
   border: white;
   margin: 5px;
   padding: 0;
+  box-shadow: 0 0 50px black;
 }
 .header-container {
   /*border-radius: 5px;*/
