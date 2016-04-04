@@ -44,7 +44,7 @@ BakeryApp
     $scope.eventFocus = null;
 
     $scope.$watch(function(){
-        console.log("eventFocus registers as "+ $scope.eventFocus)
+        // console.log("eventFocus registers as "+ $scope.eventFocus)
     })
 
     $scope.modal = function(id){
@@ -56,17 +56,17 @@ BakeryApp
     }
 
     var homeImages = function(){
-        console.log('inside func')
+        // console.log('inside func')
         $timeout(function() {
-        console.log('inside timeout 1')
+        // console.log('inside timeout 1')
 
             $scope.homeSlide = 1;
             $timeout(function() {
-        console.log('inside timeout 2')
+        // console.log('inside timeout 2')
 
                 $scope.homeSlide = 2;
                 $timeout(function() {
-        console.log('inside timeout 3')
+        // console.log('inside timeout 3')
 
                     $scope.homeSlide = 3;
                     homeImages();
