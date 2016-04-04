@@ -163,7 +163,7 @@ a:focus {
 }
 .home-image-container {
   /*width: 100vw;*/
-  padding-left: 40px;
+  padding-left: 35px;
   overflow: hidden;
   height: 42em;
   /*text-align: center;*/
@@ -618,6 +618,8 @@ img.slide {
 @media (max-width: 999px) {
   .home-image-container {
   height: 32em;
+  padding-left: 25px;
+
   }
   .media-q-hider {
     display: none;
@@ -663,6 +665,7 @@ img.slide {
 @media (max-width: 700px) {
   .home-image-container {
   height: 22em;
+  padding-left: 15px;
 
   }
   .col-xs-3 > h1 {
