@@ -157,6 +157,9 @@ a:focus {
   position: relative;
   margin: 0 auto;
 }
+.home-info-container {
+  margin-top: 2.5%;
+}
 .home-image {
   height: auto;
   max-height: 600px;
