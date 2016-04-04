@@ -464,6 +464,8 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
 
 .navlink {
   border-bottom: solid white 5px;
+  border-right: solid white 2.5px;
+  border-left: solid white 2.5px;
   border-radius: 0 0 10px 10px;
   text-decoration: none;
   width: 100%;
