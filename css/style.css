@@ -166,7 +166,7 @@ a:focus {
   overflow: hidden;
   height: 45em;
   text-align: center;
-  /*position: relative;*/
+  position: static;
   margin: 0 auto;
 }
 .home-info-container {
