@@ -453,7 +453,8 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
   /*border: solid white 5px;*/
 }
 .navigator {
-  /*border: solid black 1px;*/
+  border-bottom: solid white 1px;
+  border-radius: 0 0 10px 10px;
   margin: 0 auto;
   margin-top: -20px;
   font-family: 'Pacifico', cursive;
