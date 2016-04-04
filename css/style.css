@@ -48,6 +48,7 @@ a {
 
 }
 .home-content {
+  overflow: hidden;
   padding-bottom: 115px;
   /*border-bottom: solid red 5px;*/
 }
