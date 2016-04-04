@@ -466,10 +466,11 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
   border-bottom: solid white 5px;
   border-radius: 0 0 10px 10px;
   text-decoration: none;
-  width: auto;
+  width: 100%;
+  text-align: center;
   /*height: 33%;*/
   color: #B9AA64;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   font-size: 2.5em;
   text-shadow: -1px -1px 0 black, 2px -1px 0 black, -1px 1px 0 black, 2px 1px 0 black;
   transition: color 0.7s;
