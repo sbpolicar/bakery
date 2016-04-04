@@ -281,7 +281,7 @@ body > div.container-fluid > ng-view > div > div > div.images.ng-scope > div > d
 }
 
 .icon:hover {
-  animation: flip .5s;
+  animation: pulse .5s;
   /*border: solid black 5px;*/
   width: 80px;
   /*border-radius: 0;*/
