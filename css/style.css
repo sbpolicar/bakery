@@ -6,7 +6,7 @@ html {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  box-shadow: inset 0 0 500px black;
+  box-shadow: inset 10px 10px 500px black;
 }
 
 ul > li {
