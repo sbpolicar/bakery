@@ -50,6 +50,7 @@ a {
 .home-content {
   overflow: hidden;
   height: 100%;
+  display: inline-block;
   padding-bottom: 115px;
   /*border-bottom: solid red 5px;*/
 }
