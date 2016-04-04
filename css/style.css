@@ -162,9 +162,10 @@ a:focus {
   width: 97%;
   text-align: center;
   animation: slideInRight 1s;
-  border: solid black 2px;
-  border-left: solid black 10px;
-  border-right: solid black 10px;
+  border: solid black 1px;
+  box-shadow: 5px 5px 50px black;
+  /*border-left: solid black 10px;*/
+  /*border-right: solid black 10px;*/
   border-radius: 10px;
   position: absolute;
   margin: 0 auto;
