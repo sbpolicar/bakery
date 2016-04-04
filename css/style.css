@@ -618,7 +618,7 @@ img.slide {
 @media (max-width: 999px) {
   .home-image-container {
   height: 32em;
-  padding-left: 25px;
+  padding-left: 30px;
 
   }
   .media-q-hider {
@@ -665,7 +665,7 @@ img.slide {
 @media (max-width: 700px) {
   .home-image-container {
   height: 22em;
-  padding-left: 15px;
+  padding-left: 20px;
 
   }
   .col-xs-3 > h1 {
