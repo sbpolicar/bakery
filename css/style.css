@@ -170,7 +170,7 @@ a:focus {
   border-radius: 10px;
   position: absolute;
   margin: 0 auto;
-  margin-top: -5%;
+  /*margin-top: -5%;*/
   /*width: 93%;*/
   /*height: 400px;*/
 }
