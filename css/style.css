@@ -129,7 +129,7 @@ a:focus {
 }
 .navlink:nth-child(1){
   border-left: none;
-  border-radius: 0 0 0 10px;
+  border-radius: 0 0 10px 0;
 }
   .navlink:nth-child(4) {
   border-radius: 0 0 0 10px;
