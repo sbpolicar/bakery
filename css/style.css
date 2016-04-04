@@ -167,7 +167,7 @@ a:focus {
   overflow: hidden;
   height: 42em;
   text-align: center;
-  /*position: relative;*/
+  position: relative;
   margin: 0 auto;
 }
 .home-info-container {
@@ -184,7 +184,8 @@ a:focus {
   /*border-left: solid black 10px;*/
   /*border-right: solid black 10px;*/
   border-radius: 10px;
-  /*position: absolute;*/
+  position: absolute;
+  left: 50;
   margin: 0 auto;
   margin-top: -2.5%;
   /*width: 93%;*/
