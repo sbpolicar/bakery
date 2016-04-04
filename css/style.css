@@ -162,7 +162,7 @@ a:focus {
   margin: 0;
 }
 .home-image-container {
-  /*width: 100vw;*/
+  width: 100vw;
   padding-left: 35px;
   overflow: hidden;
   height: 42em;
