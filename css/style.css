@@ -249,13 +249,13 @@ body > div.container-fluid > ng-view > div > div > div.images.ng-scope > div > d
   width: auto;
 }
 .icon-btn {
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 50px;
 }
 
 .icon {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: solid black 0px;
   -webkit-transition: .4s;
@@ -265,7 +265,7 @@ body > div.container-fluid > ng-view > div > div > div.images.ng-scope > div > d
 
 .icon:hover {
   /*animation: flip .5s;*/
-  border: solid black 10px;
+  border: solid black 5px;
 }
 
 .home-btn {
