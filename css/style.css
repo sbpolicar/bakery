@@ -31,10 +31,10 @@ body {
   background-border: solid black 10px;
   background-image: url("http://res.cloudinary.com/spolicar/image/upload/v1455134890/misc/bgoverlay.png");
   /*background-image: url("http://res.cloudinary.com/sbpolicar/image/upload/v1454361359/newwall_bxqygg.png");*/
-  background-size: 130% 170%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /*background-attachment: fixed;*/
+  background-attachment: fixed;
 }
 
 body > div:nth-child(4) {
