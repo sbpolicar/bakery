@@ -52,7 +52,7 @@ a {
   padding-bottom: 115px;
   /*border-bottom: solid red 5px;*/
 }
-body > div.container-fluid > ng-view > div > div.col-xs-5.text-center > a {
+body > div.container-fluid > ng-view > div > div.col-md-5.text-center > a {
   text-shadow: none;
 }
 a:hover {
