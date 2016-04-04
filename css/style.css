@@ -234,6 +234,8 @@ hr {
   border: 0;
   height: 1px;
   width: 50%;
+  margin: 5px auto;
+
   /*background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));*/
   background-color: #B9AA64 !important;
 }
