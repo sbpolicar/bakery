@@ -561,7 +561,9 @@ ul > * {
 .fa-caret-down {
   margin-bottom: -20px !important;
 }
-
+.spacer {
+  visibility: hidden;
+}
 img.slide {
   text-align: center;
   height: auto;
