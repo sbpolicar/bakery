@@ -479,7 +479,7 @@ body > div:nth-child(5) > ng-view > div > div > div > h1 {
 }
 
 .navlink:hover {
-  box-shadow: inset 0 0 50px white;
+  box-shadow: inset 0 0 50px rgba(255,255,255,0.5);
   text-decoration: none;
   color: black;
   text-shadow: -1px -1px 0 #B9AA64, 2px -1px 0 #B9AA64, -1px 1px 0 #B9AA64, 2px 1px 0 #B9AA64;
