@@ -33,8 +33,8 @@ body {
   /*background-image: url("http://res.cloudinary.com/sbpolicar/image/upload/v1454361359/newwall_bxqygg.png");*/
   background-size: 130% 170%;
   background-repeat: no-repeat;
-  background-position: left;
-  background-attachment: fixed;
+  background-position: center;
+  /*background-attachment: fixed;*/
 }
 
 body > div:nth-child(4) {
