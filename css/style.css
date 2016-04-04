@@ -127,7 +127,12 @@ a:focus {
   /*width: 100%;*/
   /*background-color: rgba(0,0,0,0.5);*/
 }
-
+.navlink:nth-child(1){
+  border-left: none;
+}
+  .navlink:nth-child(4) {
+  border-right: none;
+}
 .fine-print {
   opacity: 0.7;
   /*color: white;*/
