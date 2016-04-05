@@ -43,10 +43,6 @@ BakeryApp
     $scope.homeSlide = 1;
     $scope.eventFocus = null;
 
-    $scope.$watch(function(){
-        // console.log("eventFocus registers as "+ $scope.eventFocus)
-    })
-
     $scope.modal = function(id){
         $scope.eventFocus = id.target.currentSrc;
     };
@@ -56,18 +52,11 @@ BakeryApp
     }
 
     var homeImages = function(){
-        // console.log('inside func')
         $timeout(function() {
-        // console.log('inside timeout 1')
-
             $scope.homeSlide = 1;
             $timeout(function() {
-        // console.log('inside timeout 2')
-
                 $scope.homeSlide = 2;
                 $timeout(function() {
-        // console.log('inside timeout 3')
-
                     $scope.homeSlide = 3;
                     homeImages();
                 }, 5000);
