@@ -45,6 +45,7 @@ a {
 
 .home-content {
   height: 100%;
+  max-height: 80vh;
 }
 
 body > div.container-fluid > ng-view > div > div.col-md-5.text-center > a {
