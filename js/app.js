@@ -1,4 +1,4 @@
-var BakeryApp = angular.module('BakeryApp',['ngAnimate','ngRoute', 'simple-slideshow']);
+var BakeryApp = angular.module('BakeryApp',['ngAnimate','ngRoute', 'simple-slideshow', 'ngSanitize']);
 
 BakeryApp.run([function(){
 }]);

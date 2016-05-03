@@ -42,6 +42,7 @@ BakeryApp
     $scope.whichEvent = 'gallery';
     $scope.homeSlide = 1;
     $scope.eventFocus = null;
+    $scope.homeCaption = "Come see us at the Farmer's Markets in <li>Carnation on Tuesday</li> <li>Duvall on Thursday</li> <li>Sammamish next Wednesday</li>"
 
     $scope.modal = function(id){
         $scope.eventFocus = id.target.currentSrc;
@@ -51,17 +52,31 @@ BakeryApp
         $scope.eventFocus = null;
     }
 
+    var cakeDecider = function(){
+        var cakeToggle = Math.random();
+        if(cakeToggle > .5) {
+            $scope.whichCake = 'http://res.cloudinary.com/spolicar/image/upload/v1462301082/cakes/ChocolateCake.jpg'
+        } else {
+            $scope.whichCake = 'http://res.cloudinary.com/spolicar/image/upload/v1462301082/cakes/CarrotCake.jpg'
+        }
+    }
+
+
     var homeImages = function(){
         $timeout(function() {
+            $scope.homeCaption = "Come see us at the Farmer's Markets in <li>Carnation on Tuesday</li> <li>Duvall on Thursday</li> <li>Sammamish next Wednesday</li>"
             $scope.homeSlide = 1;
             $timeout(function() {
+                $scope.homeCaption = "Get a treat for Mom that is just as sweet as she is!"
                 $scope.homeSlide = 2;
+                cakeDecider();
                 $timeout(function() {
+                    $scope.homeCaption = "Don't forget to stop by and try our new cakes!"
                     $scope.homeSlide = 3;
                     homeImages();
                 }, 5000);
             }, 5000);
-        }, 5000);
+        }, 7000);
     };
 
     var buildImages = function(){
@@ -113,6 +128,7 @@ BakeryApp
 
     buildImages();
     homeImages();
+    cakeDecider();
 
 }]);
 
