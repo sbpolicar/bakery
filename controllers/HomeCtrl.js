@@ -64,18 +64,18 @@ BakeryApp
 
     var homeImages = function(){
         $timeout(function() {
-            $scope.homeCaption = "Come see us at the Farmer's Markets in <li>Carnation on Tuesday</li> <li>Duvall on Thursday</li> <li>Sammamish next Wednesday</li>"
+            $scope.homeCaption = "Come see us at the Farmer's Markets in <li>Carnation on Tuesday</li> <li>Duvall on Thursday</li> <li>Sammamish Wednesday</li> <li>Maple Valley Saturday</li>"
             $scope.homeSlide = 1;
             $timeout(function() {
-                $scope.homeCaption = '<a href="http://www.whitegunpowder.com/donut-birthday-cake-and-a-visit-to-georgias-bakery-cafe/">Check out our feature on White Gunpowder</a>'
+                $scope.homeCaption = '<a href="http://www.whitegunpowder.com/donut-birthday-cake-and-a-visit-to-georgias-bakery-cafe/">Click here to checkout our feature on White Gunpowder</a>'
                 $scope.homeSlide = 2;
                 cakeDecider();
                 $timeout(function() {
                     $scope.homeCaption = "Don't forget to stop by and try our new cakes!"
                     $scope.homeSlide = 3;
                     homeImages();
-                }, 5000);
-            }, 5000);
+                }, 7000);
+            }, 7000);
         }, 7000);
     };
 
