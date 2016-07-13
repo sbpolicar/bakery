@@ -67,7 +67,7 @@ BakeryApp
             $scope.homeCaption = "Come see us at the Farmer's Markets in <li>Carnation on Tuesday</li> <li>Duvall on Thursday</li> <li>Sammamish next Wednesday</li>"
             $scope.homeSlide = 1;
             $timeout(function() {
-                $scope.homeCaption = "Get a treat for Mom that is just as sweet as she is!"
+                $scope.homeCaption = '<a href="http://www.whitegunpowder.com/donut-birthday-cake-and-a-visit-to-georgias-bakery-cafe/">Check out our feature on White Gunpowder</a>'
                 $scope.homeSlide = 2;
                 cakeDecider();
                 $timeout(function() {
@@ -131,4 +131,3 @@ BakeryApp
     cakeDecider();
 
 }]);
-
